@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: WaterWaver
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 21300000, guid: 7f044f0e9626f5246bd7c1b3b1f8c879, type: 3}
+  - {fileID: 21300000, guid: 911b070f7237c3441a1c8607bda3efb1, type: 3}
+  - {fileID: 21300000, guid: 12e068b7f5cb991429a7141c16f3d046, type: 3}
+  - {fileID: 21300000, guid: 2c527a4fa091d66479a8b19865a2bae7, type: 3}
+  - {fileID: 21300000, guid: 13bbbc58c26b4ab4d8347aa73e43edf2, type: 3}
+  - {fileID: 21300000, guid: e9b9640ad508c4e41bc04b7330ea36dd, type: 3}
+  - {fileID: 21300000, guid: 9dc08b3082d7d23439e7809fb288eb48, type: 3}
+  - {fileID: 21300000, guid: 51c2470b5c05b074ca8a69c957fd143c, type: 3}
+  - {fileID: 21300000, guid: 6e4d59b66931aca46a9222eb72cefeda, type: 3}
+  - {fileID: 21300000, guid: 3b06f05bc2d16b64d901aba936d6dfa4, type: 3}
+  - {fileID: 21300000, guid: 293b2900119700547851942d1d5b988d, type: 3}
+  - {fileID: 21300000, guid: e4ce241adc0adb446b5b0979dfe150f3, type: 3}
+  - {fileID: 21300000, guid: 61dd9f8c494bb2a438ebc3d5cdabca62, type: 3}
+  - {fileID: 21300000, guid: 52614c22e3032fc40aa692e13eb5dcc9, type: 3}
+  - {fileID: 21300000, guid: 00e9f61134436744c80f7643080ac2a3, type: 3}
+  - {fileID: 21300000, guid: 6e8852a1f81d6554fa282f3d6fbe32d4, type: 3}
+  m_MinSpeed: 10
+  m_MaxSpeed: 10
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 2

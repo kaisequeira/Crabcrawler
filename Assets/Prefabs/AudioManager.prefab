@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5747471533210180605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5747471533210180547}
+  - component: {fileID: 5747471533210180546}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5747471533210180547
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5747471533210180605}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5747471533210180546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5747471533210180605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d4e2af9e0bfe1045944ee560df60f5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: CrawlyCritters
+    clip: {fileID: 8300000, guid: fb6bc9864aa45784e87ded8d16078bc2, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 1
+    Output: {fileID: 24300002, guid: 29c7983a3cd4cb642b23a557bd708aa6, type: 2}
+    source: {fileID: 0}
+  - name: OceanCrashing
+    clip: {fileID: 8300000, guid: d356493b5dad9cd4595f7aaa97bd49c9, type: 3}
+    volume: 0.078
+    pitch: 1
+    loop: 1
+    Output: {fileID: 24300002, guid: 007f33394000cf748ad280ffd60bfcb5, type: 2}
+    source: {fileID: 0}
+  - name: SandSteps
+    clip: {fileID: 8300000, guid: 4b9612c627979d04ab794abf757fdce7, type: 3}
+    volume: 0.312
+    pitch: 2.28
+    loop: 0
+    Output: {fileID: 24300002, guid: 007f33394000cf748ad280ffd60bfcb5, type: 2}
+    source: {fileID: 0}
+  - name: WoodSteps
+    clip: {fileID: 8300000, guid: 9eb2f778944282c4ebf488f47f1bfd7d, type: 3}
+    volume: 0.1
+    pitch: 1.6
+    loop: 0
+    Output: {fileID: 24300002, guid: 007f33394000cf748ad280ffd60bfcb5, type: 2}
+    source: {fileID: 0}
+  - name: BubbleSounds
+    clip: {fileID: 8300000, guid: 30d79a16981432d488c74328cb9f4c2d, type: 3}
+    volume: 1.3
+    pitch: 1
+    loop: 1
+    Output: {fileID: 24300002, guid: 007f33394000cf748ad280ffd60bfcb5, type: 2}
+    source: {fileID: 0}
+  - name: WaterExit
+    clip: {fileID: 8300000, guid: cf76311629ff8234ca5fccd0f8c66296, type: 3}
+    volume: 0.26
+    pitch: 1.35
+    loop: 0
+    Output: {fileID: 24300002, guid: 007f33394000cf748ad280ffd60bfcb5, type: 2}
+    source: {fileID: 0}
+  - name: WaterIn
+    clip: {fileID: 8300000, guid: 69e62b84468860343a74e69a5e8acbc1, type: 3}
+    volume: 0.26
+    pitch: 1.35
+    loop: 0
+    Output: {fileID: 24300002, guid: 007f33394000cf748ad280ffd60bfcb5, type: 2}
+    source: {fileID: 0}
+  - name: Checkpoint
+    clip: {fileID: 8300000, guid: bf78b82cf78b78a4db1c423abdb15e56, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    Output: {fileID: 24300002, guid: 007f33394000cf748ad280ffd60bfcb5, type: 2}
+    source: {fileID: 0}
+  - name: SandCastle
+    clip: {fileID: 8300000, guid: 5051cc1b930aa0147a09a9a51e0d1a29, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    Output: {fileID: 24300002, guid: 007f33394000cf748ad280ffd60bfcb5, type: 2}
+    source: {fileID: 0}
+  - name: HeartLoss
+    clip: {fileID: 8300000, guid: 3ef65d33018e296499b8ab7c59ad1f95, type: 3}
+    volume: 0.4
+    pitch: 0.8
+    loop: 0
+    Output: {fileID: 24300002, guid: 007f33394000cf748ad280ffd60bfcb5, type: 2}
+    source: {fileID: 0}
+  - name: TurtleBounce
+    clip: {fileID: 8300000, guid: 71d2d4eef95609d4982daea0f826dd24, type: 3}
+    volume: 0.3
+    pitch: 0.4
+    loop: 0
+    Output: {fileID: 24300002, guid: 007f33394000cf748ad280ffd60bfcb5, type: 2}
+    source: {fileID: 0}
+  inMainMenu: 0

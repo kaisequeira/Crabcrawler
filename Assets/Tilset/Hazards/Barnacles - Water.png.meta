@@ -1,0 +1,2355 @@
+fileFormatVersion: 2
+guid: 2fdadc098bae89f4bbab8b970ca39e3c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Barnacles - Water_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 3}
+        - {x: 6, y: 3}
+        - {x: 6, y: 2}
+        - {x: 5, y: 2}
+        - {x: 5, y: 1}
+        - {x: 6, y: 1}
+        - {x: 6, y: -2}
+        - {x: 7, y: -2}
+        - {x: 7, y: -3}
+        - {x: 8, y: -3}
+        - {x: 8, y: -5}
+        - {x: 6, y: -5}
+        - {x: 6, y: -7}
+        - {x: 7, y: -7}
+        - {x: 7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 4}
+        - {x: 7, y: 4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c688af6ac749cf942853bcb2c9f19da3
+      internalID: -587877370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 4}
+        - {x: -8, y: -7}
+        - {x: -6, y: -7}
+        - {x: -6, y: -6}
+        - {x: -5, y: -6}
+        - {x: -5, y: -4}
+        - {x: -4, y: -4}
+        - {x: -4, y: -3}
+        - {x: -5, y: -3}
+        - {x: -5, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -5}
+        - {x: -8, y: -5}
+        - {x: -8, y: -3}
+        - {x: -8, y: -1}
+        - {x: -7, y: -1}
+        - {x: -7, y: 0}
+        - {x: -6, y: 0}
+        - {x: -6, y: 2}
+        - {x: -5, y: 2}
+        - {x: -5, y: 4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c02cd31a96642b4a9c1525ba325cb69
+      internalID: 1939154311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 6, y: 3}
+        - {x: 6, y: 2}
+        - {x: 5, y: 2}
+        - {x: 5, y: 1}
+        - {x: 4, y: 1}
+        - {x: 4, y: -2}
+        - {x: 5, y: -2}
+        - {x: 5, y: -4}
+        - {x: 8, y: -4}
+        - {x: 8, y: 3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96a33229e6ff4a458a756ecdf3cdcb9
+      internalID: -216064689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -6, y: 6}
+        - {x: -6, y: 5}
+        - {x: -7, y: 5}
+        - {x: -7, y: 4}
+        - {x: -8, y: 4}
+        - {x: -8, y: -7}
+        - {x: -7, y: -7}
+        - {x: -7, y: -6}
+        - {x: -6, y: -6}
+        - {x: -6, y: -5}
+        - {x: -5, y: -5}
+        - {x: -5, y: -3}
+        - {x: -4, y: -3}
+        - {x: -4, y: 0}
+        - {x: -5, y: 0}
+        - {x: -5, y: 1}
+        - {x: -6, y: 1}
+        - {x: -6, y: 4}
+        - {x: -5, y: 4}
+        - {x: -5, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d38be6d3ee2ffa4a90bacd76c1bd011
+      internalID: 593020769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 8, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 4}
+        - {x: 5, y: 4}
+        - {x: 5, y: 2}
+        - {x: 4, y: 2}
+        - {x: 4, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: 2}
+        - {x: 6, y: 2}
+        - {x: 6, y: 1}
+        - {x: 7, y: 1}
+        - {x: 7, y: 2}
+        - {x: 8, y: 2}
+        - {x: 8, y: 1}
+        - {x: 7, y: 1}
+        - {x: 7, y: 0}
+        - {x: 6, y: 0}
+        - {x: 6, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -6}
+        - {x: 7, y: -6}
+        - {x: 7, y: -4}
+        - {x: 8, y: -4}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447b5f61a7a26a8459ed80d988f8a74e
+      internalID: -649676593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 7}
+        - {x: -8, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: 2}
+        - {x: -8, y: 2}
+        - {x: -8, y: 3}
+        - {x: -6, y: 3}
+        - {x: -6, y: 4}
+        - {x: -5, y: 4}
+        - {x: -5, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f42003d3b3cbe4f8b841b137f48e56
+      internalID: 760617200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 8, y: 6}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 5}
+        - {x: 6, y: 5}
+        - {x: 6, y: 4}
+        - {x: 7, y: 4}
+        - {x: 7, y: 3}
+        - {x: 8, y: 3}
+        - {x: 8, y: 1}
+        - {x: 6, y: 1}
+        - {x: 6, y: 2}
+        - {x: 5, y: 2}
+        - {x: 5, y: 1}
+        - {x: 4, y: 1}
+        - {x: 4, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: -2}
+        - {x: 6, y: -2}
+        - {x: 8, y: -2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1f4a5ac2eb1a24286248a97b9c4be1
+      internalID: 1145764005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_7
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 4}
+        - {x: -5, y: 4}
+        - {x: -5, y: 5}
+        - {x: -6, y: 5}
+        - {x: -6, y: 7}
+        - {x: -7, y: 7}
+        - {x: -7, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -6}
+        - {x: -7, y: -6}
+        - {x: -7, y: -5}
+        - {x: -6, y: -5}
+        - {x: -6, y: -3}
+        - {x: -5, y: -3}
+        - {x: -5, y: -1}
+        - {x: -4, y: -1}
+        - {x: -4, y: 0}
+        - {x: -5, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245b80948c229914e8e58f79e015e1ab
+      internalID: 1808898970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 7}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 4}
+        - {x: 5, y: 4}
+        - {x: 5, y: 2}
+        - {x: 4, y: 2}
+        - {x: 4, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: 2}
+        - {x: 6, y: 2}
+        - {x: 6, y: 1}
+        - {x: 7, y: 1}
+        - {x: 7, y: 2}
+        - {x: 8, y: 2}
+        - {x: 8, y: 1}
+        - {x: 7, y: 1}
+        - {x: 7, y: 0}
+        - {x: 6, y: 0}
+        - {x: 6, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -6}
+        - {x: 7, y: -6}
+        - {x: 7, y: -4}
+        - {x: 8, y: -4}
+        - {x: 8, y: 7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: def44fa33de697448a5fe7b64aa712c1
+      internalID: -2140239530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -6, y: 7}
+        - {x: -8, y: 7}
+        - {x: -8, y: -8}
+        - {x: 7, y: -8}
+        - {x: 7, y: -3}
+        - {x: 5, y: -3}
+        - {x: 4, y: -3}
+        - {x: 4, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: -6}
+        - {x: 4, y: -6}
+        - {x: 4, y: -7}
+        - {x: 2, y: -7}
+        - {x: 2, y: -6}
+        - {x: 3, y: -6}
+        - {x: 3, y: -4}
+        - {x: 2, y: -4}
+        - {x: 2, y: -3}
+        - {x: 1, y: -3}
+        - {x: 1, y: -2}
+        - {x: 0, y: -2}
+        - {x: 0, y: -1}
+        - {x: -2, y: -1}
+        - {x: -2, y: -2}
+        - {x: -3, y: -2}
+        - {x: -3, y: -3}
+        - {x: -4, y: -3}
+        - {x: -4, y: -4}
+        - {x: -5, y: -4}
+        - {x: -5, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: 2}
+        - {x: -8, y: 2}
+        - {x: -8, y: 3}
+        - {x: -6, y: 3}
+        - {x: -6, y: 4}
+        - {x: -5, y: 4}
+        - {x: -5, y: 6}
+        - {x: -6, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb3a215cd0050344a48c772c30095c0
+      internalID: -255118921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -4}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -3}
+        - {x: 7, y: -3}
+        - {x: 7, y: -2}
+        - {x: 5, y: -2}
+        - {x: 5, y: -3}
+        - {x: 4, y: -3}
+        - {x: 4, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: -6}
+        - {x: 4, y: -6}
+        - {x: 4, y: -7}
+        - {x: 2, y: -7}
+        - {x: 2, y: -6}
+        - {x: 3, y: -6}
+        - {x: 3, y: -4}
+        - {x: 2, y: -4}
+        - {x: 2, y: -3}
+        - {x: 1, y: -3}
+        - {x: 1, y: -2}
+        - {x: 0, y: -2}
+        - {x: 0, y: -1}
+        - {x: -2, y: -1}
+        - {x: -2, y: -2}
+        - {x: -3, y: -2}
+        - {x: -3, y: -3}
+        - {x: -4, y: -3}
+        - {x: -4, y: -4}
+        - {x: -5, y: -4}
+        - {x: -5, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbdaf339cd405f48af8040457cbb3c9
+      internalID: -1473378850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -5}
+        - {x: 2, y: -5}
+        - {x: 2, y: -8}
+        - {x: 0, y: -8}
+        - {x: 0, y: -5}
+        - {x: -1, y: -5}
+        - {x: -1, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+        - {x: -4, y: -5}
+        - {x: -4, y: -8}
+        - {x: -5, y: -8}
+        - {x: -5, y: -6}
+        - {x: -6, y: -6}
+        - {x: -7, y: -6}
+        - {x: -7, y: -8}
+        - {x: 7, y: -8}
+        - {x: 7, y: -5}
+        - {x: 6, y: -5}
+        - {x: 6, y: -4}
+        - {x: 3, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db5ad5243436dd4e90c5520025b5048
+      internalID: 1392461359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -5}
+        - {x: 2, y: -5}
+        - {x: 2, y: -8}
+        - {x: 0, y: -8}
+        - {x: 0, y: -5}
+        - {x: -1, y: -5}
+        - {x: -1, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+        - {x: -4, y: -5}
+        - {x: -4, y: -8}
+        - {x: -5, y: -8}
+        - {x: -5, y: -6}
+        - {x: -7, y: -6}
+        - {x: -7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 4}
+        - {x: 7, y: 4}
+        - {x: 7, y: 3}
+        - {x: 8, y: 3}
+        - {x: 8, y: 1}
+        - {x: 6, y: 1}
+        - {x: 6, y: 2}
+        - {x: 5, y: 2}
+        - {x: 5, y: 1}
+        - {x: 4, y: 1}
+        - {x: 4, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: -2}
+        - {x: 6, y: -2}
+        - {x: 6, y: -3}
+        - {x: 7, y: -3}
+        - {x: 7, y: -4}
+        - {x: 8, y: -4}
+        - {x: 8, y: -8}
+        - {x: 7, y: -8}
+        - {x: 7, y: -5}
+        - {x: 6, y: -5}
+        - {x: 6, y: -4}
+        - {x: 3, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52fb815132663c49bb024649c756650
+      internalID: -86685521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 4}
+        - {x: -5, y: 4}
+        - {x: -5, y: 5}
+        - {x: -6, y: 5}
+        - {x: -6, y: 7}
+        - {x: -7, y: 7}
+        - {x: -7, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -6}
+        - {x: -7, y: -6}
+        - {x: -7, y: -5}
+        - {x: -6, y: -5}
+        - {x: -6, y: -3}
+        - {x: -5, y: -3}
+        - {x: -5, y: -1}
+        - {x: -4, y: -1}
+        - {x: -4, y: 0}
+        - {x: -5, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbde9ec5e0dfd4d459540bb34c52d65b
+      internalID: -1316759838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_14
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: 5}
+        - {x: -7, y: 5}
+        - {x: -7, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 5}
+        - {x: -3, y: 5}
+        - {x: -3, y: 6}
+        - {x: -1, y: 6}
+        - {x: -1, y: 5}
+        - {x: 1, y: 5}
+        - {x: 1, y: 6}
+        - {x: 2, y: 6}
+        - {x: 2, y: 7}
+        - {x: 3, y: 7}
+        - {x: 3, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 5, y: 7}
+        - {x: 5, y: 6}
+        - {x: 7, y: 6}
+        - {x: 7, y: 5}
+        - {x: 8, y: 5}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b74225f46e4eb489005891152d4afc
+      internalID: -854460329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: 5}
+        - {x: -7, y: 5}
+        - {x: -7, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 5}
+        - {x: -3, y: 5}
+        - {x: -3, y: 6}
+        - {x: -1, y: 6}
+        - {x: -1, y: 5}
+        - {x: 1, y: 5}
+        - {x: 1, y: 6}
+        - {x: 2, y: 6}
+        - {x: 2, y: 7}
+        - {x: 3, y: 7}
+        - {x: 3, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 5, y: 7}
+        - {x: 5, y: 6}
+        - {x: 7, y: 6}
+        - {x: 7, y: 5}
+        - {x: 8, y: 5}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f986044a3af803945ae75e7108802790
+      internalID: 56043473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_16
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: 6}
+        - {x: -7, y: 6}
+        - {x: -7, y: 7}
+        - {x: -6, y: 7}
+        - {x: -6, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -4, y: 5}
+        - {x: -4, y: 6}
+        - {x: -3, y: 6}
+        - {x: -3, y: 5}
+        - {x: -2, y: 5}
+        - {x: -2, y: 6}
+        - {x: 0, y: 6}
+        - {x: 0, y: 5}
+        - {x: -1, y: 5}
+        - {x: -1, y: 4}
+        - {x: 1, y: 4}
+        - {x: 1, y: 5}
+        - {x: 3, y: 5}
+        - {x: 3, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 5}
+        - {x: 7, y: 5}
+        - {x: 7, y: 6}
+        - {x: 8, y: 6}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e531ad374edd94d9c41d972742ffc0
+      internalID: 888359740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: 6}
+        - {x: -7, y: 6}
+        - {x: -7, y: 7}
+        - {x: -6, y: 7}
+        - {x: -6, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -4, y: 5}
+        - {x: -4, y: 6}
+        - {x: -3, y: 6}
+        - {x: -3, y: 5}
+        - {x: -2, y: 5}
+        - {x: -2, y: 6}
+        - {x: 0, y: 6}
+        - {x: 0, y: 5}
+        - {x: -1, y: 5}
+        - {x: -1, y: 4}
+        - {x: 1, y: 4}
+        - {x: 1, y: 5}
+        - {x: 3, y: 5}
+        - {x: 3, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 5}
+        - {x: 7, y: 5}
+        - {x: 7, y: 6}
+        - {x: 8, y: 6}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7668d62fc1cdaa04797096a959cf56f1
+      internalID: -1979431959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5, y: 6}
+        - {x: 5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: 0}
+        - {x: 4, y: 0}
+        - {x: 4, y: -3}
+        - {x: 5, y: -3}
+        - {x: 5, y: -5}
+        - {x: 6, y: -5}
+        - {x: 6, y: -6}
+        - {x: 7, y: -6}
+        - {x: 7, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 4}
+        - {x: 7, y: 4}
+        - {x: 7, y: 5}
+        - {x: 6, y: 5}
+        - {x: 6, y: 6}
+      tessellationDetail: 1
+      bones: []
+      spriteID: ae16c78e6fcbc69448d4a40b46c5d6e7
+      internalID: -339545628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 3}
+        - {x: -8, y: 3}
+        - {x: -8, y: -4}
+        - {x: -5, y: -4}
+        - {x: -5, y: -2}
+        - {x: -4, y: -2}
+        - {x: -4, y: 1}
+        - {x: -5, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e9bacba10d7db4da482f804dd395e9
+      internalID: 1364694000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 6, y: 3}
+        - {x: 5, y: 3}
+        - {x: 5, y: 2}
+        - {x: 6, y: 2}
+        - {x: 6, y: 0}
+        - {x: 7, y: 0}
+        - {x: 7, y: -1}
+        - {x: 7, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -2}
+        - {x: 5, y: -2}
+        - {x: 5, y: -3}
+        - {x: 4, y: -3}
+        - {x: 4, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: -6}
+        - {x: 6, y: -6}
+        - {x: 6, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 4}
+        - {x: 6, y: 4}
+      tessellationDetail: 1
+      bones: []
+      spriteID: a5f390ed602c8654184d450bd1e88ba5
+      internalID: 25831132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 3}
+        - {x: -7, y: 3}
+        - {x: -7, y: 4}
+        - {x: -8, y: 4}
+        - {x: -8, y: -8}
+        - {x: -7, y: -8}
+        - {x: -7, y: -7}
+        - {x: -6, y: -7}
+        - {x: -6, y: -5}
+        - {x: -8, y: -5}
+        - {x: -8, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: 1}
+        - {x: -5, y: 1}
+      tessellationDetail: 1
+      bones: []
+      spriteID: f3163c288390ba7489709178bb649481
+      internalID: 1425986064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 8}
+        - {x: 7, y: 7}
+        - {x: 6, y: 7}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 2}
+        - {x: 7, y: 2}
+        - {x: 7, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: 0}
+        - {x: 4, y: 0}
+        - {x: 4, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -6}
+        - {x: 8, y: -6}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a499f53792c55a4ca2cb62b39d572c3
+      internalID: -1944290785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_23
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 6}
+        - {x: -8, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -2}
+        - {x: -5, y: -2}
+        - {x: -5, y: -1}
+        - {x: -4, y: -1}
+        - {x: -4, y: 1}
+        - {x: -5, y: 1}
+        - {x: -5, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 1}
+        - {x: -8, y: 1}
+        - {x: -8, y: 3}
+        - {x: -7, y: 3}
+        - {x: -7, y: 4}
+        - {x: -6, y: 4}
+        - {x: -6, y: 5}
+        - {x: -5, y: 5}
+        - {x: -5, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2998ac7f980fed14182e7d2d914a43db
+      internalID: -327085865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 8, y: 7}
+        - {x: 6, y: 7}
+        - {x: 6, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 3}
+        - {x: 8, y: 3}
+        - {x: 8, y: 2}
+        - {x: 7, y: 2}
+        - {x: 7, y: 1}
+        - {x: 6, y: 1}
+        - {x: 6, y: -2}
+        - {x: 7, y: -2}
+        - {x: 7, y: -3}
+        - {x: 8, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c625293786a972a4fa83a5875a4ea77f
+      internalID: -804486262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_25
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: 6}
+        - {x: -7, y: 7}
+        - {x: -8, y: 7}
+        - {x: -8, y: -4}
+        - {x: -7, y: -4}
+        - {x: -7, y: -6}
+        - {x: -6, y: -6}
+        - {x: -6, y: -3}
+        - {x: -5, y: -3}
+        - {x: -5, y: -1}
+        - {x: -6, y: -1}
+        - {x: -6, y: 1}
+        - {x: -4, y: 1}
+        - {x: -4, y: 2}
+        - {x: -5, y: 2}
+        - {x: -5, y: 4}
+        - {x: -6, y: 4}
+        - {x: -6, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd02d81d654aa24c9b5e1bd40b21c9d
+      internalID: 278835096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 8}
+        - {x: 7, y: 7}
+        - {x: 6, y: 7}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 2}
+        - {x: 7, y: 2}
+        - {x: 7, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: 0}
+        - {x: 4, y: 0}
+        - {x: 4, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -6}
+        - {x: 8, y: -6}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1b6db7a7940294193f13913c28c061
+      internalID: -1953681756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_27
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 6}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -3}
+        - {x: 7, y: -3}
+        - {x: 7, y: -2}
+        - {x: 5, y: -2}
+        - {x: 5, y: -3}
+        - {x: 4, y: -3}
+        - {x: 4, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: -6}
+        - {x: 4, y: -6}
+        - {x: 4, y: -7}
+        - {x: 2, y: -7}
+        - {x: 2, y: -6}
+        - {x: 3, y: -6}
+        - {x: 3, y: -4}
+        - {x: 2, y: -4}
+        - {x: 2, y: -3}
+        - {x: 1, y: -3}
+        - {x: 1, y: -2}
+        - {x: 0, y: -2}
+        - {x: 0, y: -1}
+        - {x: -2, y: -1}
+        - {x: -2, y: -2}
+        - {x: -3, y: -2}
+        - {x: -3, y: -3}
+        - {x: -4, y: -3}
+        - {x: -4, y: -4}
+        - {x: -5, y: -4}
+        - {x: -5, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -2}
+        - {x: -5, y: -2}
+        - {x: -5, y: -1}
+        - {x: -4, y: -1}
+        - {x: -4, y: 1}
+        - {x: -5, y: 1}
+        - {x: -5, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 1}
+        - {x: -8, y: 1}
+        - {x: -8, y: 3}
+        - {x: -7, y: 3}
+        - {x: -7, y: 4}
+        - {x: -6, y: 4}
+        - {x: -6, y: 5}
+        - {x: -5, y: 5}
+        - {x: -5, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89faba5c2c6b72742870e74681968125
+      internalID: -1325181976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: 8}
+        - {x: -4, y: 7}
+        - {x: -5, y: 7}
+        - {x: -5, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 5}
+        - {x: -4, y: 5}
+        - {x: -4, y: 6}
+        - {x: -1, y: 6}
+        - {x: -1, y: 5}
+        - {x: 0, y: 5}
+        - {x: 0, y: 4}
+        - {x: 3, y: 4}
+        - {x: 3, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e9d69841be5834fb0ba4c6c6b9eb6f
+      internalID: 239134763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_29
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 1}
+        - {x: -5, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 3}
+        - {x: -6, y: 5}
+        - {x: -4, y: 5}
+        - {x: -4, y: 6}
+        - {x: -1, y: 6}
+        - {x: -1, y: 5}
+        - {x: 0, y: 5}
+        - {x: 0, y: 4}
+        - {x: 3, y: 4}
+        - {x: 3, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 2}
+        - {x: 7, y: 2}
+        - {x: 7, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -6}
+        - {x: 8, y: -6}
+        - {x: 8, y: 0}
+        - {x: 7, y: 0}
+        - {x: 7, y: 1}
+        - {x: 8, y: 1}
+        - {x: 8, y: 5}
+        - {x: 7, y: 5}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: 8}
+        - {x: -4, y: 8}
+        - {x: -4, y: 7}
+        - {x: -5, y: 7}
+        - {x: -5, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 4}
+        - {x: -8, y: 4}
+        - {x: -8, y: -8}
+        - {x: -7, y: -8}
+        - {x: -7, y: -7}
+        - {x: -6, y: -7}
+        - {x: -6, y: -5}
+        - {x: -8, y: -5}
+        - {x: -8, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: 1}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 183e98aafca53d246bb0495750cf7ec2
+      internalID: -580281991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -5}
+        - {x: 2, y: -5}
+        - {x: 2, y: -8}
+        - {x: 0, y: -8}
+        - {x: 0, y: -5}
+        - {x: -1, y: -5}
+        - {x: -1, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+        - {x: -4, y: -5}
+        - {x: -4, y: -8}
+        - {x: -5, y: -8}
+        - {x: -5, y: -6}
+        - {x: -7, y: -6}
+        - {x: -7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 7}
+        - {x: 6, y: 7}
+        - {x: 6, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 3}
+        - {x: 8, y: 3}
+        - {x: 8, y: 2}
+        - {x: 7, y: 2}
+        - {x: 7, y: 1}
+        - {x: 6, y: 1}
+        - {x: 6, y: -2}
+        - {x: 7, y: -2}
+        - {x: 7, y: -3}
+        - {x: 8, y: -3}
+        - {x: 8, y: -8}
+        - {x: 7, y: -8}
+        - {x: 7, y: -5}
+        - {x: 6, y: -5}
+        - {x: 6, y: -4}
+        - {x: 3, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7764d4783eb9a434a94e175a80763eb4
+      internalID: -195916638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_31
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: 6}
+        - {x: -7, y: 7}
+        - {x: -8, y: 7}
+        - {x: -8, y: -4}
+        - {x: -7, y: -4}
+        - {x: -7, y: -6}
+        - {x: -6, y: -6}
+        - {x: -6, y: -3}
+        - {x: -5, y: -3}
+        - {x: -5, y: -1}
+        - {x: -6, y: -1}
+        - {x: -6, y: 1}
+        - {x: -4, y: 1}
+        - {x: -4, y: 2}
+        - {x: -5, y: 2}
+        - {x: -5, y: 4}
+        - {x: -6, y: 4}
+        - {x: -6, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec03e1022fa7fc4d930364b62354572
+      internalID: -529154371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_32
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: 6}
+        - {x: -1, y: 6}
+        - {x: -1, y: 5}
+        - {x: 1, y: 5}
+        - {x: 1, y: 6}
+        - {x: 2, y: 6}
+        - {x: 2, y: 7}
+        - {x: 3, y: 7}
+        - {x: 3, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 5, y: 7}
+        - {x: 5, y: 6}
+        - {x: 7, y: 6}
+        - {x: 7, y: 5}
+        - {x: 8, y: 5}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: 5}
+        - {x: -7, y: 5}
+        - {x: -7, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 5}
+        - {x: -3, y: 5}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 03073a6ec18b4094c8dde3d809fa30d4
+      internalID: 1827147680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2d5d92675a2ab4fbc6ea81dc76d062
+      internalID: 1555660003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_34
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944d0689962ba5f4a8e3b1a96fdc470c
+      internalID: -1575983080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_35
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: 6}
+        - {x: -7, y: 6}
+        - {x: -7, y: 7}
+        - {x: -6, y: 7}
+        - {x: -6, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -4, y: 5}
+        - {x: -4, y: 6}
+        - {x: -3, y: 6}
+        - {x: -3, y: 5}
+        - {x: -2, y: 5}
+        - {x: -2, y: 6}
+        - {x: 0, y: 6}
+        - {x: 0, y: 5}
+        - {x: -1, y: 5}
+        - {x: -1, y: 4}
+        - {x: 1, y: 4}
+        - {x: 1, y: 5}
+        - {x: 3, y: 5}
+        - {x: 3, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 5}
+        - {x: 7, y: 5}
+        - {x: 7, y: 6}
+        - {x: 8, y: 6}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2581daf60b07a3948a687c581b65097c
+      internalID: 221140611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 2, y: -6}
+        - {x: 2, y: -4}
+        - {x: 2, y: -3}
+        - {x: 1, y: -3}
+        - {x: 1, y: -2}
+        - {x: 0, y: -2}
+        - {x: 0, y: -1}
+        - {x: -2, y: -1}
+        - {x: -2, y: -2}
+        - {x: -3, y: -2}
+        - {x: -3, y: -3}
+        - {x: -4, y: -3}
+        - {x: -4, y: -4}
+        - {x: -5, y: -4}
+        - {x: -5, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -4}
+        - {x: -8, y: -4}
+        - {x: -8, y: -8}
+        - {x: 2, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8a929e3c8d0724793b3b45d5b2b865
+      internalID: -1089084147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -5}
+        - {x: 6, y: -5}
+        - {x: 6, y: -4}
+        - {x: 3, y: -4}
+        - {x: 3, y: -5}
+        - {x: 2, y: -5}
+        - {x: 2, y: -8}
+        - {x: 0, y: -8}
+        - {x: 0, y: -5}
+        - {x: -1, y: -5}
+        - {x: -1, y: -4}
+        - {x: -2, y: -4}
+        - {x: -2, y: -6}
+        - {x: -3, y: -6}
+        - {x: -3, y: -8}
+        - {x: 7, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649efc3cf7f54c44592378ae013c9e78
+      internalID: 293580824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_38
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: 5}
+        - {x: -7, y: 5}
+        - {x: -7, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 5}
+        - {x: -3, y: 5}
+        - {x: -3, y: 6}
+        - {x: -1, y: 6}
+        - {x: -1, y: 5}
+        - {x: 1, y: 5}
+        - {x: 1, y: 6}
+        - {x: 2, y: 6}
+        - {x: 2, y: 7}
+        - {x: 3, y: 7}
+        - {x: 3, y: 6}
+        - {x: 4, y: 6}
+        - {x: 5, y: 5}
+        - {x: 5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: 0}
+        - {x: 4, y: 0}
+        - {x: 4, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -6}
+        - {x: 8, y: -6}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e045f3a1d3d23fe48970aa362313cc4b
+      internalID: -995647847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_39
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 6}
+        - {x: -8, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -2}
+        - {x: -5, y: -2}
+        - {x: -5, y: -1}
+        - {x: -4, y: -1}
+        - {x: -4, y: 1}
+        - {x: -5, y: 1}
+        - {x: -5, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 1}
+        - {x: -8, y: 1}
+        - {x: -8, y: 3}
+        - {x: -7, y: 3}
+        - {x: -7, y: 4}
+        - {x: -6, y: 4}
+        - {x: -6, y: 5}
+        - {x: -5, y: 5}
+        - {x: -5, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66fc7cd8a4e6c314bb0c7da6cf2d6bc4
+      internalID: -1272576097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_40
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 6, y: 3}
+        - {x: 5, y: 3}
+        - {x: 5, y: 2}
+        - {x: 6, y: 2}
+        - {x: 6, y: 0}
+        - {x: 7, y: 0}
+        - {x: 7, y: -1}
+        - {x: 7, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -2}
+        - {x: 5, y: -2}
+        - {x: 5, y: -3}
+        - {x: 4, y: -3}
+        - {x: 4, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: -6}
+        - {x: 6, y: -6}
+        - {x: 6, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 4}
+        - {x: 6, y: 4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0158685386388f141be2683d8d76e0b7
+      internalID: -454979187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: -7, y: -8}
+        - {x: -7, y: -7}
+        - {x: -6, y: -7}
+        - {x: -6, y: -5}
+        - {x: -8, y: -5}
+        - {x: -8, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: 1}
+        - {x: -5, y: 1}
+        - {x: -5, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 3}
+        - {x: -7, y: 3}
+        - {x: -7, y: 4}
+        - {x: -8, y: 4}
+        - {x: -8, y: 5}
+        - {x: -5, y: 5}
+        - {x: -4, y: 5}
+        - {x: -4, y: 6}
+        - {x: -3, y: 6}
+        - {x: -3, y: 5}
+        - {x: -2, y: 5}
+        - {x: -2, y: 6}
+        - {x: 0, y: 6}
+        - {x: 0, y: 5}
+        - {x: -1, y: 5}
+        - {x: -1, y: 4}
+        - {x: 1, y: 4}
+        - {x: 1, y: 5}
+        - {x: 3, y: 5}
+        - {x: 3, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 5}
+        - {x: 7, y: 5}
+        - {x: 7, y: 6}
+        - {x: 8, y: 6}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99937159c9818bf45b0be6caf8e93662
+      internalID: 2079464191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -5}
+        - {x: 6, y: -5}
+        - {x: 6, y: -4}
+        - {x: 3, y: -4}
+        - {x: 3, y: -5}
+        - {x: 2, y: -5}
+        - {x: 2, y: -8}
+        - {x: 0, y: -8}
+        - {x: 0, y: -5}
+        - {x: -1, y: -5}
+        - {x: -1, y: -4}
+        - {x: -2, y: -4}
+        - {x: -2, y: -6}
+        - {x: -3, y: -6}
+        - {x: -3, y: -8}
+        - {x: 7, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec3f72ada6973a4fb601fb44d10032a
+      internalID: 18761903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_43
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 2, y: -6}
+        - {x: 2, y: -4}
+        - {x: 2, y: -3}
+        - {x: 1, y: -3}
+        - {x: 1, y: -2}
+        - {x: 0, y: -2}
+        - {x: 0, y: -1}
+        - {x: -2, y: -1}
+        - {x: -2, y: -2}
+        - {x: -3, y: -2}
+        - {x: -3, y: -3}
+        - {x: -4, y: -3}
+        - {x: -4, y: -4}
+        - {x: -5, y: -4}
+        - {x: -5, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -4}
+        - {x: -8, y: -4}
+        - {x: -8, y: -8}
+        - {x: 2, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128227f89888ccf4fbecc3d22f096426
+      internalID: -1358292067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: 8}
+        - {x: -4, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -2, y: 5}
+        - {x: -2, y: 6}
+        - {x: 0, y: 6}
+        - {x: 0, y: 5}
+        - {x: -1, y: 5}
+        - {x: -1, y: 4}
+        - {x: 1, y: 4}
+        - {x: 1, y: 5}
+        - {x: 3, y: 5}
+        - {x: 3, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 5}
+        - {x: 7, y: 5}
+        - {x: 7, y: 6}
+        - {x: 8, y: 6}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6db7ed8ec106444a8696da0a189ec8
+      internalID: -1467045823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_45
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: 6}
+        - {x: -1, y: 6}
+        - {x: -1, y: 5}
+        - {x: 1, y: 5}
+        - {x: 1, y: 6}
+        - {x: 2, y: 6}
+        - {x: 2, y: 7}
+        - {x: 3, y: 7}
+        - {x: 3, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 5, y: 7}
+        - {x: 5, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: 5}
+        - {x: -7, y: 5}
+        - {x: -7, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 5}
+        - {x: -3, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1675bedde11dd2c498b3ab154031e00e
+      internalID: -214012350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_46
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -1, y: -4}
+        - {x: -1, y: -5}
+        - {x: -3, y: -5}
+        - {x: -3, y: -8}
+        - {x: 4, y: -8}
+        - {x: 4, y: -6}
+        - {x: 3, y: -6}
+        - {x: 3, y: -5}
+        - {x: 2, y: -5}
+        - {x: 2, y: -4}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 06af693cad2ce6a4490a57a462c1ab7f
+      internalID: -1635583224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles - Water_47
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 8}
+        - {x: 7, y: 7}
+        - {x: 6, y: 7}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 2}
+        - {x: 7, y: 2}
+        - {x: 7, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: 0}
+        - {x: 4, y: 0}
+        - {x: 4, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -6}
+        - {x: 8, y: -6}
+        - {x: 8, y: 8}
+      - - {x: -4, y: 2}
+        - {x: -4, y: 1}
+        - {x: -5, y: 1}
+        - {x: -5, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: 0}
+        - {x: -6, y: 0}
+        - {x: -6, y: -1}
+        - {x: -5, y: -1}
+        - {x: -5, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -6}
+        - {x: -7, y: -6}
+        - {x: -7, y: -4}
+        - {x: -8, y: -4}
+        - {x: -8, y: 7}
+        - {x: -7, y: 7}
+        - {x: -7, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 4}
+        - {x: -5, y: 4}
+        - {x: -5, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1118d5f138095a1458cf0f65597811f4
+      internalID: -2005301518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Barnacles - Water_20: 25831132
+      Barnacles - Water_18: -339545628
+      Barnacles - Water_16: 888359740
+      Barnacles - Water_7: 1808898970
+      Barnacles - Water_43: -1358292067
+      Barnacles - Water_25: 278835096
+      Barnacles - Water_23: -327085865
+      Barnacles - Water_39: -1272576097
+      Barnacles - Water_21: 1425986064
+      Barnacles - Water_24: -804486262
+      Barnacles - Water_34: -1575983080
+      Barnacles - Water_32: 1827147680
+      Barnacles - Water_19: 1364694000
+      Barnacles - Water_30: -195916638
+      Barnacles - Water_26: -1953681756
+      Barnacles - Water_17: -1979431959
+      Barnacles - Water_42: 18761903
+      Barnacles - Water_27: -1325181976
+      Barnacles - Water_45: -214012350
+      Barnacles - Water_41: 2079464191
+      Barnacles - Water_35: 221140611
+      Barnacles - Water_1: 1939154311
+      Barnacles - Water_13: -1316759838
+      Barnacles - Water_38: -995647847
+      Barnacles - Water_15: 56043473
+      Barnacles - Water_46: -1635583224
+      Barnacles - Water_14: -854460329
+      Barnacles - Water_28: 239134763
+      Barnacles - Water_36: -1089084147
+      Barnacles - Water_31: -529154371
+      Barnacles - Water_40: -454979187
+      Barnacles - Water_10: -1473378850
+      Barnacles - Water_2: -216064689
+      Barnacles - Water_5: 760617200
+      Barnacles - Water_12: -86685521
+      Barnacles - Water_37: 293580824
+      Barnacles - Water_47: -2005301518
+      Barnacles - Water_11: 1392461359
+      Barnacles - Water_29: -580281991
+      Barnacles - Water_9: -255118921
+      Barnacles - Water_22: -1944290785
+      Barnacles - Water_4: -649676593
+      Barnacles - Water_0: -587877370
+      Barnacles - Water_8: -2140239530
+      Barnacles - Water_3: 593020769
+      Barnacles - Water_33: 1555660003
+      Barnacles - Water_44: -1467045823
+      Barnacles - Water_6: 1145764005
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

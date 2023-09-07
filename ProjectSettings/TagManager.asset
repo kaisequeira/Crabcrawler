@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Platform
+  - Water
+  - WaterPlayerCheck
+  - TurtleZone
+  - BubbleBlast
+  - Ground
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ground
+  - Water
+  - UI
+  - Player
+  - Platform
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 4078854905
+    locked: 0
+  - name: Cloud
+    uniqueID: 3974074199
+    locked: 0
+  - name: SandBackground
+    uniqueID: 1177645615
+    locked: 0
+  - name: WaterBackground
+    uniqueID: 2166073875
+    locked: 0
+  - name: Platform
+    uniqueID: 1534330297
+    locked: 0
+  - name: Objectives
+    uniqueID: 529989783
+    locked: 0
+  - name: Aesthetic
+    uniqueID: 2269047981
+    locked: 0
+  - name: Player
+    uniqueID: 179676389
+    locked: 0
+  - name: BackgroundAI
+    uniqueID: 3079779257
+    locked: 0
+  - name: Water
+    uniqueID: 1144082209
+    locked: 0
+  - name: ForegroundAI
+    uniqueID: 1032225981
+    locked: 0
+  - name: Ground
+    uniqueID: 773978967
+    locked: 0
+  - name: UI
+    uniqueID: 1790300539
+    locked: 0

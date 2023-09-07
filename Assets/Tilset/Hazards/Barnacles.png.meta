@@ -1,0 +1,2355 @@
+fileFormatVersion: 2
+guid: b65c46103394de34d83c469b6f6ddc7f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Barnacles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 3}
+        - {x: 6, y: 3}
+        - {x: 6, y: 2}
+        - {x: 5, y: 2}
+        - {x: 5, y: 1}
+        - {x: 6, y: 1}
+        - {x: 6, y: -2}
+        - {x: 7, y: -2}
+        - {x: 7, y: -3}
+        - {x: 8, y: -3}
+        - {x: 8, y: -5}
+        - {x: 6, y: -5}
+        - {x: 6, y: -7}
+        - {x: 7, y: -7}
+        - {x: 7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 4}
+        - {x: 7, y: 4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: da51d20c422dae74eaa16e38a16a28c5
+      internalID: 609183457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 4}
+        - {x: -8, y: -7}
+        - {x: -6, y: -7}
+        - {x: -6, y: -6}
+        - {x: -5, y: -6}
+        - {x: -5, y: -4}
+        - {x: -4, y: -4}
+        - {x: -4, y: -3}
+        - {x: -5, y: -3}
+        - {x: -5, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -5}
+        - {x: -8, y: -5}
+        - {x: -8, y: -3}
+        - {x: -8, y: -1}
+        - {x: -7, y: -1}
+        - {x: -7, y: 0}
+        - {x: -6, y: 0}
+        - {x: -6, y: 2}
+        - {x: -5, y: 2}
+        - {x: -5, y: 4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c4489e20669f14d912ff8420c436cb
+      internalID: -1338404575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 6, y: 3}
+        - {x: 6, y: 2}
+        - {x: 5, y: 2}
+        - {x: 5, y: 1}
+        - {x: 4, y: 1}
+        - {x: 4, y: -2}
+        - {x: 5, y: -2}
+        - {x: 5, y: -4}
+        - {x: 8, y: -4}
+        - {x: 8, y: 3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ec7c601256f724aa107d92640a7603
+      internalID: -288918171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -6, y: 6}
+        - {x: -6, y: 5}
+        - {x: -7, y: 5}
+        - {x: -7, y: 4}
+        - {x: -8, y: 4}
+        - {x: -8, y: -7}
+        - {x: -7, y: -7}
+        - {x: -7, y: -6}
+        - {x: -6, y: -6}
+        - {x: -6, y: -5}
+        - {x: -5, y: -5}
+        - {x: -5, y: -3}
+        - {x: -4, y: -3}
+        - {x: -4, y: 0}
+        - {x: -5, y: 0}
+        - {x: -5, y: 1}
+        - {x: -6, y: 1}
+        - {x: -6, y: 4}
+        - {x: -5, y: 4}
+        - {x: -5, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcef59fb3eee5ba4c86291c4b4e43fe4
+      internalID: 1428730555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 8, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 4}
+        - {x: 5, y: 4}
+        - {x: 5, y: 2}
+        - {x: 4, y: 2}
+        - {x: 4, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: 2}
+        - {x: 6, y: 2}
+        - {x: 6, y: 1}
+        - {x: 7, y: 1}
+        - {x: 7, y: 2}
+        - {x: 8, y: 2}
+        - {x: 8, y: 1}
+        - {x: 7, y: 1}
+        - {x: 7, y: 0}
+        - {x: 6, y: 0}
+        - {x: 6, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -6}
+        - {x: 7, y: -6}
+        - {x: 7, y: -4}
+        - {x: 8, y: -4}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1755cc8740f2b64f943804d6ef8c1d3
+      internalID: -1238170800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 7}
+        - {x: -8, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: 2}
+        - {x: -8, y: 2}
+        - {x: -8, y: 3}
+        - {x: -6, y: 3}
+        - {x: -6, y: 4}
+        - {x: -5, y: 4}
+        - {x: -5, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a385179fdc027a4eaaf6902773c46e4
+      internalID: -340692928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 8, y: 6}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 5}
+        - {x: 6, y: 5}
+        - {x: 6, y: 4}
+        - {x: 7, y: 4}
+        - {x: 7, y: 3}
+        - {x: 8, y: 3}
+        - {x: 8, y: 1}
+        - {x: 6, y: 1}
+        - {x: 6, y: 2}
+        - {x: 5, y: 2}
+        - {x: 5, y: 1}
+        - {x: 4, y: 1}
+        - {x: 4, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: -2}
+        - {x: 6, y: -2}
+        - {x: 8, y: -2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b02a81e30414a4fab2d7a2d1233588
+      internalID: -99716940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_7
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 4}
+        - {x: -5, y: 4}
+        - {x: -5, y: 5}
+        - {x: -6, y: 5}
+        - {x: -6, y: 7}
+        - {x: -7, y: 7}
+        - {x: -7, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -6}
+        - {x: -7, y: -6}
+        - {x: -7, y: -5}
+        - {x: -6, y: -5}
+        - {x: -6, y: -3}
+        - {x: -5, y: -3}
+        - {x: -5, y: -1}
+        - {x: -4, y: -1}
+        - {x: -4, y: 0}
+        - {x: -5, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023647adb59b15f45bcc7acbc9dfcb97
+      internalID: -676470370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 7}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 4}
+        - {x: 5, y: 4}
+        - {x: 5, y: 2}
+        - {x: 4, y: 2}
+        - {x: 4, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: 2}
+        - {x: 6, y: 2}
+        - {x: 6, y: 1}
+        - {x: 7, y: 1}
+        - {x: 7, y: 2}
+        - {x: 8, y: 2}
+        - {x: 8, y: 1}
+        - {x: 7, y: 1}
+        - {x: 7, y: 0}
+        - {x: 6, y: 0}
+        - {x: 6, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -6}
+        - {x: 7, y: -6}
+        - {x: 7, y: -4}
+        - {x: 8, y: -4}
+        - {x: 8, y: 7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8537ee965fa590e4d9cd371ca4e151bb
+      internalID: -985467410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -6, y: 7}
+        - {x: -8, y: 7}
+        - {x: -8, y: -8}
+        - {x: 7, y: -8}
+        - {x: 7, y: -3}
+        - {x: 5, y: -3}
+        - {x: 4, y: -3}
+        - {x: 4, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: -6}
+        - {x: 4, y: -6}
+        - {x: 4, y: -7}
+        - {x: 2, y: -7}
+        - {x: 2, y: -6}
+        - {x: 3, y: -6}
+        - {x: 3, y: -4}
+        - {x: 2, y: -4}
+        - {x: 2, y: -3}
+        - {x: 1, y: -3}
+        - {x: 1, y: -2}
+        - {x: 0, y: -2}
+        - {x: 0, y: -1}
+        - {x: -2, y: -1}
+        - {x: -2, y: -2}
+        - {x: -3, y: -2}
+        - {x: -3, y: -3}
+        - {x: -4, y: -3}
+        - {x: -4, y: -4}
+        - {x: -5, y: -4}
+        - {x: -5, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: 2}
+        - {x: -8, y: 2}
+        - {x: -8, y: 3}
+        - {x: -6, y: 3}
+        - {x: -6, y: 4}
+        - {x: -5, y: 4}
+        - {x: -5, y: 6}
+        - {x: -6, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58159493ac04cd84eb6c94d2adb863cb
+      internalID: 1617952807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -4}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -3}
+        - {x: 7, y: -3}
+        - {x: 7, y: -2}
+        - {x: 5, y: -2}
+        - {x: 5, y: -3}
+        - {x: 4, y: -3}
+        - {x: 4, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: -6}
+        - {x: 4, y: -6}
+        - {x: 4, y: -7}
+        - {x: 2, y: -7}
+        - {x: 2, y: -6}
+        - {x: 3, y: -6}
+        - {x: 3, y: -4}
+        - {x: 2, y: -4}
+        - {x: 2, y: -3}
+        - {x: 1, y: -3}
+        - {x: 1, y: -2}
+        - {x: 0, y: -2}
+        - {x: 0, y: -1}
+        - {x: -2, y: -1}
+        - {x: -2, y: -2}
+        - {x: -3, y: -2}
+        - {x: -3, y: -3}
+        - {x: -4, y: -3}
+        - {x: -4, y: -4}
+        - {x: -5, y: -4}
+        - {x: -5, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4f3db64b4766f4e9254ff99ebf791f
+      internalID: 1602324164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -5}
+        - {x: 2, y: -5}
+        - {x: 2, y: -8}
+        - {x: 0, y: -8}
+        - {x: 0, y: -5}
+        - {x: -1, y: -5}
+        - {x: -1, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+        - {x: -4, y: -5}
+        - {x: -4, y: -8}
+        - {x: -5, y: -8}
+        - {x: -5, y: -6}
+        - {x: -6, y: -6}
+        - {x: -7, y: -6}
+        - {x: -7, y: -8}
+        - {x: 7, y: -8}
+        - {x: 7, y: -5}
+        - {x: 6, y: -5}
+        - {x: 6, y: -4}
+        - {x: 3, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217b3009e9526e541be9c1140a4a71c1
+      internalID: -990407823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -5}
+        - {x: 2, y: -5}
+        - {x: 2, y: -8}
+        - {x: 0, y: -8}
+        - {x: 0, y: -5}
+        - {x: -1, y: -5}
+        - {x: -1, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+        - {x: -4, y: -5}
+        - {x: -4, y: -8}
+        - {x: -5, y: -8}
+        - {x: -5, y: -6}
+        - {x: -7, y: -6}
+        - {x: -7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 4}
+        - {x: 7, y: 4}
+        - {x: 7, y: 3}
+        - {x: 8, y: 3}
+        - {x: 8, y: 1}
+        - {x: 6, y: 1}
+        - {x: 6, y: 2}
+        - {x: 5, y: 2}
+        - {x: 5, y: 1}
+        - {x: 4, y: 1}
+        - {x: 4, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: -2}
+        - {x: 6, y: -2}
+        - {x: 6, y: -3}
+        - {x: 7, y: -3}
+        - {x: 7, y: -4}
+        - {x: 8, y: -4}
+        - {x: 8, y: -8}
+        - {x: 7, y: -8}
+        - {x: 7, y: -5}
+        - {x: 6, y: -5}
+        - {x: 6, y: -4}
+        - {x: 3, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7e8212dd40bf64c85eb504021a047e
+      internalID: 212655045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 4}
+        - {x: -5, y: 4}
+        - {x: -5, y: 5}
+        - {x: -6, y: 5}
+        - {x: -6, y: 7}
+        - {x: -7, y: 7}
+        - {x: -7, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -6}
+        - {x: -7, y: -6}
+        - {x: -7, y: -5}
+        - {x: -6, y: -5}
+        - {x: -6, y: -3}
+        - {x: -5, y: -3}
+        - {x: -5, y: -1}
+        - {x: -4, y: -1}
+        - {x: -4, y: 0}
+        - {x: -5, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9dcfa53cc350545865baffd74b2385
+      internalID: 406621049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_14
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: 5}
+        - {x: -7, y: 5}
+        - {x: -7, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 5}
+        - {x: -3, y: 5}
+        - {x: -3, y: 6}
+        - {x: -1, y: 6}
+        - {x: -1, y: 5}
+        - {x: 1, y: 5}
+        - {x: 1, y: 6}
+        - {x: 2, y: 6}
+        - {x: 2, y: 7}
+        - {x: 3, y: 7}
+        - {x: 3, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 5, y: 7}
+        - {x: 5, y: 6}
+        - {x: 7, y: 6}
+        - {x: 7, y: 5}
+        - {x: 8, y: 5}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e2b40463394f04ba8d04c6c837d3e2
+      internalID: 2109474738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: 5}
+        - {x: -7, y: 5}
+        - {x: -7, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 5}
+        - {x: -3, y: 5}
+        - {x: -3, y: 6}
+        - {x: -1, y: 6}
+        - {x: -1, y: 5}
+        - {x: 1, y: 5}
+        - {x: 1, y: 6}
+        - {x: 2, y: 6}
+        - {x: 2, y: 7}
+        - {x: 3, y: 7}
+        - {x: 3, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 5, y: 7}
+        - {x: 5, y: 6}
+        - {x: 7, y: 6}
+        - {x: 7, y: 5}
+        - {x: 8, y: 5}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797e5f8c7a1845f4198a0ef3e4cb6014
+      internalID: 1082697703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_16
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: 6}
+        - {x: -7, y: 6}
+        - {x: -7, y: 7}
+        - {x: -6, y: 7}
+        - {x: -6, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -4, y: 5}
+        - {x: -4, y: 6}
+        - {x: -3, y: 6}
+        - {x: -3, y: 5}
+        - {x: -2, y: 5}
+        - {x: -2, y: 6}
+        - {x: 0, y: 6}
+        - {x: 0, y: 5}
+        - {x: -1, y: 5}
+        - {x: -1, y: 4}
+        - {x: 1, y: 4}
+        - {x: 1, y: 5}
+        - {x: 3, y: 5}
+        - {x: 3, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 5}
+        - {x: 7, y: 5}
+        - {x: 7, y: 6}
+        - {x: 8, y: 6}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3edc180ee81f5c4448d44283d2549d66
+      internalID: -1396988016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: 6}
+        - {x: -7, y: 6}
+        - {x: -7, y: 7}
+        - {x: -6, y: 7}
+        - {x: -6, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -4, y: 5}
+        - {x: -4, y: 6}
+        - {x: -3, y: 6}
+        - {x: -3, y: 5}
+        - {x: -2, y: 5}
+        - {x: -2, y: 6}
+        - {x: 0, y: 6}
+        - {x: 0, y: 5}
+        - {x: -1, y: 5}
+        - {x: -1, y: 4}
+        - {x: 1, y: 4}
+        - {x: 1, y: 5}
+        - {x: 3, y: 5}
+        - {x: 3, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 5}
+        - {x: 7, y: 5}
+        - {x: 7, y: 6}
+        - {x: 8, y: 6}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc6c662e4798424bb1ed359245087f1
+      internalID: 1297138202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5, y: 6}
+        - {x: 5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: 0}
+        - {x: 4, y: 0}
+        - {x: 4, y: -3}
+        - {x: 5, y: -3}
+        - {x: 5, y: -5}
+        - {x: 6, y: -5}
+        - {x: 6, y: -6}
+        - {x: 7, y: -6}
+        - {x: 7, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 4}
+        - {x: 7, y: 4}
+        - {x: 7, y: 5}
+        - {x: 6, y: 5}
+        - {x: 6, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68407992206a5e4194aa8a55a5e39d0
+      internalID: 637165001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 3}
+        - {x: -8, y: 3}
+        - {x: -8, y: -4}
+        - {x: -5, y: -4}
+        - {x: -5, y: -2}
+        - {x: -4, y: -2}
+        - {x: -4, y: 1}
+        - {x: -5, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135dbc1c070a3ab40a1afe3ca0c2df96
+      internalID: -17627905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 6, y: 3}
+        - {x: 5, y: 3}
+        - {x: 5, y: 2}
+        - {x: 6, y: 2}
+        - {x: 6, y: 0}
+        - {x: 7, y: 0}
+        - {x: 7, y: -1}
+        - {x: 7, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -2}
+        - {x: 5, y: -2}
+        - {x: 5, y: -3}
+        - {x: 4, y: -3}
+        - {x: 4, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: -6}
+        - {x: 6, y: -6}
+        - {x: 6, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 4}
+        - {x: 6, y: 4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a424114631e60c049bd207440250be66
+      internalID: 2085859444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 3}
+        - {x: -7, y: 3}
+        - {x: -7, y: 4}
+        - {x: -8, y: 4}
+        - {x: -8, y: -8}
+        - {x: -7, y: -8}
+        - {x: -7, y: -7}
+        - {x: -6, y: -7}
+        - {x: -6, y: -5}
+        - {x: -8, y: -5}
+        - {x: -8, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: 1}
+        - {x: -5, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9090a3d585399664bb41b5eb855d9a61
+      internalID: 633013522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 8}
+        - {x: 7, y: 7}
+        - {x: 6, y: 7}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 2}
+        - {x: 7, y: 2}
+        - {x: 7, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: 0}
+        - {x: 4, y: 0}
+        - {x: 4, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -6}
+        - {x: 8, y: -6}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936e3e698f8cc814ca769dacecb3bdee
+      internalID: 224869279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_23
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 6}
+        - {x: -8, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -2}
+        - {x: -5, y: -2}
+        - {x: -5, y: -1}
+        - {x: -4, y: -1}
+        - {x: -4, y: 1}
+        - {x: -5, y: 1}
+        - {x: -5, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 1}
+        - {x: -8, y: 1}
+        - {x: -8, y: 3}
+        - {x: -7, y: 3}
+        - {x: -7, y: 4}
+        - {x: -6, y: 4}
+        - {x: -6, y: 5}
+        - {x: -5, y: 5}
+        - {x: -5, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa55762958935f41977219abfff1b30
+      internalID: 1758165570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 8, y: 7}
+        - {x: 6, y: 7}
+        - {x: 6, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 3}
+        - {x: 8, y: 3}
+        - {x: 8, y: 2}
+        - {x: 7, y: 2}
+        - {x: 7, y: 1}
+        - {x: 6, y: 1}
+        - {x: 6, y: -2}
+        - {x: 7, y: -2}
+        - {x: 7, y: -3}
+        - {x: 8, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6073817245b796446bb9d6d2e58133ea
+      internalID: -1478252086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_25
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: 6}
+        - {x: -7, y: 7}
+        - {x: -8, y: 7}
+        - {x: -8, y: -4}
+        - {x: -7, y: -4}
+        - {x: -7, y: -6}
+        - {x: -6, y: -6}
+        - {x: -6, y: -3}
+        - {x: -5, y: -3}
+        - {x: -5, y: -1}
+        - {x: -6, y: -1}
+        - {x: -6, y: 1}
+        - {x: -4, y: 1}
+        - {x: -4, y: 2}
+        - {x: -5, y: 2}
+        - {x: -5, y: 4}
+        - {x: -6, y: 4}
+        - {x: -6, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6594f1cab0048e04b947d708b6792c57
+      internalID: -1761826647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 8}
+        - {x: 7, y: 7}
+        - {x: 6, y: 7}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 2}
+        - {x: 7, y: 2}
+        - {x: 7, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: 0}
+        - {x: 4, y: 0}
+        - {x: 4, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -6}
+        - {x: 8, y: -6}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b61342cdc9ce3b44a6c2bf7f42bdeed
+      internalID: 510126859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_27
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 6}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -3}
+        - {x: 7, y: -3}
+        - {x: 7, y: -2}
+        - {x: 5, y: -2}
+        - {x: 5, y: -3}
+        - {x: 4, y: -3}
+        - {x: 4, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: -6}
+        - {x: 4, y: -6}
+        - {x: 4, y: -7}
+        - {x: 2, y: -7}
+        - {x: 2, y: -6}
+        - {x: 3, y: -6}
+        - {x: 3, y: -4}
+        - {x: 2, y: -4}
+        - {x: 2, y: -3}
+        - {x: 1, y: -3}
+        - {x: 1, y: -2}
+        - {x: 0, y: -2}
+        - {x: 0, y: -1}
+        - {x: -2, y: -1}
+        - {x: -2, y: -2}
+        - {x: -3, y: -2}
+        - {x: -3, y: -3}
+        - {x: -4, y: -3}
+        - {x: -4, y: -4}
+        - {x: -5, y: -4}
+        - {x: -5, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -2}
+        - {x: -5, y: -2}
+        - {x: -5, y: -1}
+        - {x: -4, y: -1}
+        - {x: -4, y: 1}
+        - {x: -5, y: 1}
+        - {x: -5, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 1}
+        - {x: -8, y: 1}
+        - {x: -8, y: 3}
+        - {x: -7, y: 3}
+        - {x: -7, y: 4}
+        - {x: -6, y: 4}
+        - {x: -6, y: 5}
+        - {x: -5, y: 5}
+        - {x: -5, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d40f2bed58a074194e1127533052c2
+      internalID: -2069836596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: 8}
+        - {x: -4, y: 7}
+        - {x: -5, y: 7}
+        - {x: -5, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 5}
+        - {x: -4, y: 5}
+        - {x: -4, y: 6}
+        - {x: -1, y: 6}
+        - {x: -1, y: 5}
+        - {x: 0, y: 5}
+        - {x: 0, y: 4}
+        - {x: 3, y: 4}
+        - {x: 3, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3c916075d43c84db46733747f37c43
+      internalID: 1125397501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_29
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 1}
+        - {x: -5, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 3}
+        - {x: -6, y: 5}
+        - {x: -4, y: 5}
+        - {x: -4, y: 6}
+        - {x: -1, y: 6}
+        - {x: -1, y: 5}
+        - {x: 0, y: 5}
+        - {x: 0, y: 4}
+        - {x: 3, y: 4}
+        - {x: 3, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 2}
+        - {x: 7, y: 2}
+        - {x: 7, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -6}
+        - {x: 8, y: -6}
+        - {x: 8, y: 0}
+        - {x: 7, y: 0}
+        - {x: 7, y: 1}
+        - {x: 8, y: 1}
+        - {x: 8, y: 5}
+        - {x: 7, y: 5}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: 8}
+        - {x: -4, y: 8}
+        - {x: -4, y: 7}
+        - {x: -5, y: 7}
+        - {x: -5, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 4}
+        - {x: -8, y: 4}
+        - {x: -8, y: -8}
+        - {x: -7, y: -8}
+        - {x: -7, y: -7}
+        - {x: -6, y: -7}
+        - {x: -6, y: -5}
+        - {x: -8, y: -5}
+        - {x: -8, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8650d7bca40d8a48981b86e0dbed67f
+      internalID: 626769816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -5}
+        - {x: 2, y: -5}
+        - {x: 2, y: -8}
+        - {x: 0, y: -8}
+        - {x: 0, y: -5}
+        - {x: -1, y: -5}
+        - {x: -1, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+        - {x: -4, y: -5}
+        - {x: -4, y: -8}
+        - {x: -5, y: -8}
+        - {x: -5, y: -6}
+        - {x: -7, y: -6}
+        - {x: -7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 7}
+        - {x: 6, y: 7}
+        - {x: 6, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 3}
+        - {x: 8, y: 3}
+        - {x: 8, y: 2}
+        - {x: 7, y: 2}
+        - {x: 7, y: 1}
+        - {x: 6, y: 1}
+        - {x: 6, y: -2}
+        - {x: 7, y: -2}
+        - {x: 7, y: -3}
+        - {x: 8, y: -3}
+        - {x: 8, y: -8}
+        - {x: 7, y: -8}
+        - {x: 7, y: -5}
+        - {x: 6, y: -5}
+        - {x: 6, y: -4}
+        - {x: 3, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce4f9691b4ee87419b61a08e4514380
+      internalID: -10989619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_31
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: 6}
+        - {x: -7, y: 7}
+        - {x: -8, y: 7}
+        - {x: -8, y: -4}
+        - {x: -7, y: -4}
+        - {x: -7, y: -6}
+        - {x: -6, y: -6}
+        - {x: -6, y: -3}
+        - {x: -5, y: -3}
+        - {x: -5, y: -1}
+        - {x: -6, y: -1}
+        - {x: -6, y: 1}
+        - {x: -4, y: 1}
+        - {x: -4, y: 2}
+        - {x: -5, y: 2}
+        - {x: -5, y: 4}
+        - {x: -6, y: 4}
+        - {x: -6, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa54541f7a20db4b8a6265d674c6a6e
+      internalID: 1363245679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_32
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: 6}
+        - {x: -1, y: 6}
+        - {x: -1, y: 5}
+        - {x: 1, y: 5}
+        - {x: 1, y: 6}
+        - {x: 2, y: 6}
+        - {x: 2, y: 7}
+        - {x: 3, y: 7}
+        - {x: 3, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 5, y: 7}
+        - {x: 5, y: 6}
+        - {x: 7, y: 6}
+        - {x: 7, y: 5}
+        - {x: 8, y: 5}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: 5}
+        - {x: -7, y: 5}
+        - {x: -7, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 5}
+        - {x: -3, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc76c7e00b9bce448b15c068e7a4ded
+      internalID: 1951907020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827041d12f6e9cd44b61f6ee782f321f
+      internalID: 493853641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_34
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f292d049a710c48942a0a362ee6bca
+      internalID: 1593483327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_35
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: 6}
+        - {x: -7, y: 6}
+        - {x: -7, y: 7}
+        - {x: -6, y: 7}
+        - {x: -6, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -4, y: 5}
+        - {x: -4, y: 6}
+        - {x: -3, y: 6}
+        - {x: -3, y: 5}
+        - {x: -2, y: 5}
+        - {x: -2, y: 6}
+        - {x: 0, y: 6}
+        - {x: 0, y: 5}
+        - {x: -1, y: 5}
+        - {x: -1, y: 4}
+        - {x: 1, y: 4}
+        - {x: 1, y: 5}
+        - {x: 3, y: 5}
+        - {x: 3, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 5}
+        - {x: 7, y: 5}
+        - {x: 7, y: 6}
+        - {x: 8, y: 6}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a9e32374faae364a9ab4a8ecedb1081
+      internalID: 156025669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 2, y: -6}
+        - {x: 2, y: -4}
+        - {x: 2, y: -3}
+        - {x: 1, y: -3}
+        - {x: 1, y: -2}
+        - {x: 0, y: -2}
+        - {x: 0, y: -1}
+        - {x: -2, y: -1}
+        - {x: -2, y: -2}
+        - {x: -3, y: -2}
+        - {x: -3, y: -3}
+        - {x: -4, y: -3}
+        - {x: -4, y: -4}
+        - {x: -5, y: -4}
+        - {x: -5, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -4}
+        - {x: -8, y: -4}
+        - {x: -8, y: -8}
+        - {x: 2, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa45934baf940c49b55c70a1f418d6a
+      internalID: -1460549093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -5}
+        - {x: 6, y: -5}
+        - {x: 6, y: -4}
+        - {x: 3, y: -4}
+        - {x: 3, y: -5}
+        - {x: 2, y: -5}
+        - {x: 2, y: -8}
+        - {x: 0, y: -8}
+        - {x: 0, y: -5}
+        - {x: -1, y: -5}
+        - {x: -1, y: -4}
+        - {x: -2, y: -4}
+        - {x: -2, y: -6}
+        - {x: -3, y: -6}
+        - {x: -3, y: -8}
+        - {x: 7, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f960dc3bf467d44797f933ef1c51815
+      internalID: -1819531804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_38
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: 5}
+        - {x: -7, y: 5}
+        - {x: -7, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 5}
+        - {x: -3, y: 5}
+        - {x: -3, y: 6}
+        - {x: -1, y: 6}
+        - {x: -1, y: 5}
+        - {x: 1, y: 5}
+        - {x: 1, y: 6}
+        - {x: 2, y: 6}
+        - {x: 2, y: 7}
+        - {x: 3, y: 7}
+        - {x: 3, y: 6}
+        - {x: 4, y: 6}
+        - {x: 5, y: 5}
+        - {x: 5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: 0}
+        - {x: 4, y: 0}
+        - {x: 4, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -6}
+        - {x: 8, y: -6}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067185dc324812a4d81399e9bc2ae482
+      internalID: 1464038441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_39
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 6}
+        - {x: -8, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -2}
+        - {x: -5, y: -2}
+        - {x: -5, y: -1}
+        - {x: -4, y: -1}
+        - {x: -4, y: 1}
+        - {x: -5, y: 1}
+        - {x: -5, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 1}
+        - {x: -8, y: 1}
+        - {x: -8, y: 3}
+        - {x: -7, y: 3}
+        - {x: -7, y: 4}
+        - {x: -6, y: 4}
+        - {x: -6, y: 5}
+        - {x: -5, y: 5}
+        - {x: -5, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d0fb8ffd60b714893d8ec13d1d3c7c
+      internalID: 1447206318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_40
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 6, y: 3}
+        - {x: 5, y: 3}
+        - {x: 5, y: 2}
+        - {x: 6, y: 2}
+        - {x: 6, y: 0}
+        - {x: 7, y: 0}
+        - {x: 7, y: -1}
+        - {x: 7, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -2}
+        - {x: 5, y: -2}
+        - {x: 5, y: -3}
+        - {x: 4, y: -3}
+        - {x: 4, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: -6}
+        - {x: 6, y: -6}
+        - {x: 6, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 4}
+        - {x: 6, y: 4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04b1a9b8793e1e4197ba61a26b60b66
+      internalID: -822531291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: -7, y: -8}
+        - {x: -7, y: -7}
+        - {x: -6, y: -7}
+        - {x: -6, y: -5}
+        - {x: -8, y: -5}
+        - {x: -8, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: 1}
+        - {x: -5, y: 1}
+        - {x: -5, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 3}
+        - {x: -7, y: 3}
+        - {x: -7, y: 4}
+        - {x: -8, y: 4}
+        - {x: -8, y: 5}
+        - {x: -5, y: 5}
+        - {x: -4, y: 5}
+        - {x: -4, y: 6}
+        - {x: -3, y: 6}
+        - {x: -3, y: 5}
+        - {x: -2, y: 5}
+        - {x: -2, y: 6}
+        - {x: 0, y: 6}
+        - {x: 0, y: 5}
+        - {x: -1, y: 5}
+        - {x: -1, y: 4}
+        - {x: 1, y: 4}
+        - {x: 1, y: 5}
+        - {x: 3, y: 5}
+        - {x: 3, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 5}
+        - {x: 7, y: 5}
+        - {x: 7, y: 6}
+        - {x: 8, y: 6}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06dc40b87d2eb1e43bda490c8f15dce8
+      internalID: 1014157408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -5}
+        - {x: 6, y: -5}
+        - {x: 6, y: -4}
+        - {x: 3, y: -4}
+        - {x: 3, y: -5}
+        - {x: 2, y: -5}
+        - {x: 2, y: -8}
+        - {x: 0, y: -8}
+        - {x: 0, y: -5}
+        - {x: -1, y: -5}
+        - {x: -1, y: -4}
+        - {x: -2, y: -4}
+        - {x: -2, y: -6}
+        - {x: -3, y: -6}
+        - {x: -3, y: -8}
+        - {x: 7, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e58b6bf4d60dfd4cb7bc888151d935d
+      internalID: 1877956509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_43
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 2, y: -6}
+        - {x: 2, y: -4}
+        - {x: 2, y: -3}
+        - {x: 1, y: -3}
+        - {x: 1, y: -2}
+        - {x: 0, y: -2}
+        - {x: 0, y: -1}
+        - {x: -2, y: -1}
+        - {x: -2, y: -2}
+        - {x: -3, y: -2}
+        - {x: -3, y: -3}
+        - {x: -4, y: -3}
+        - {x: -4, y: -4}
+        - {x: -5, y: -4}
+        - {x: -5, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -4}
+        - {x: -8, y: -4}
+        - {x: -8, y: -8}
+        - {x: 2, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2da6ee1ed3aa9438ed68b2cb4a8d5c
+      internalID: -1931981555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: 8}
+        - {x: -4, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -2, y: 5}
+        - {x: -2, y: 6}
+        - {x: 0, y: 6}
+        - {x: 0, y: 5}
+        - {x: -1, y: 5}
+        - {x: -1, y: 4}
+        - {x: 1, y: 4}
+        - {x: 1, y: 5}
+        - {x: 3, y: 5}
+        - {x: 3, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 5}
+        - {x: 7, y: 5}
+        - {x: 7, y: 6}
+        - {x: 8, y: 6}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 290a0b242081a9d4cb18eea7ac09954d
+      internalID: 668390574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_45
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: 6}
+        - {x: -1, y: 6}
+        - {x: -1, y: 5}
+        - {x: 1, y: 5}
+        - {x: 1, y: 6}
+        - {x: 2, y: 6}
+        - {x: 2, y: 7}
+        - {x: 3, y: 7}
+        - {x: 3, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 5, y: 7}
+        - {x: 5, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: 5}
+        - {x: -7, y: 5}
+        - {x: -7, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 5}
+        - {x: -3, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8204ee946a9123c4e800b00ecfe8dad0
+      internalID: -1385742716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_46
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -1, y: -4}
+        - {x: -1, y: -5}
+        - {x: -3, y: -5}
+        - {x: -3, y: -8}
+        - {x: 4, y: -8}
+        - {x: 4, y: -6}
+        - {x: 3, y: -6}
+        - {x: 3, y: -5}
+        - {x: 2, y: -5}
+        - {x: 2, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc4dad30e0a6244fbdd3869ebccc7a8
+      internalID: -91211929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barnacles_47
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 8}
+        - {x: 7, y: 7}
+        - {x: 6, y: 7}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 2}
+        - {x: 7, y: 2}
+        - {x: 7, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: 0}
+        - {x: 4, y: 0}
+        - {x: 4, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -6}
+        - {x: 8, y: -6}
+        - {x: 8, y: 8}
+      - - {x: -4, y: 2}
+        - {x: -4, y: 1}
+        - {x: -5, y: 1}
+        - {x: -5, y: 2}
+        - {x: -6, y: 2}
+        - {x: -6, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: 0}
+        - {x: -6, y: 0}
+        - {x: -6, y: -1}
+        - {x: -5, y: -1}
+        - {x: -5, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -6}
+        - {x: -7, y: -6}
+        - {x: -7, y: -4}
+        - {x: -8, y: -4}
+        - {x: -8, y: 7}
+        - {x: -7, y: 7}
+        - {x: -7, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 4}
+        - {x: -5, y: 4}
+        - {x: -5, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070128af47c07cb4fb214c171ce120fb
+      internalID: -221133682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Barnacles_44: 668390574
+      Barnacles_37: -1819531804
+      Barnacles_10: 1602324164
+      Barnacles_22: 224869279
+      Barnacles_47: -221133682
+      Barnacles_1: -1338404575
+      Barnacles_42: 1877956509
+      Barnacles_43: -1931981555
+      Barnacles_5: -340692928
+      Barnacles_6: -99716940
+      Barnacles_15: 1082697703
+      Barnacles_21: 633013522
+      Barnacles_41: 1014157408
+      Barnacles_25: -1761826647
+      Barnacles_8: -985467410
+      Barnacles_2: -288918171
+      Barnacles_30: -10989619
+      Barnacles_40: -822531291
+      Barnacles_27: -2069836596
+      Barnacles_20: 2085859444
+      Barnacles_36: -1460549093
+      Barnacles_33: 493853641
+      Barnacles_35: 156025669
+      Barnacles_0: 609183457
+      Barnacles_38: 1464038441
+      Barnacles_12: 212655045
+      Barnacles_14: 2109474738
+      Barnacles_26: 510126859
+      Barnacles_19: -17627905
+      Barnacles_46: -91211929
+      Barnacles_28: 1125397501
+      Barnacles_31: 1363245679
+      Barnacles_29: 626769816
+      Barnacles_32: 1951907020
+      Barnacles_34: 1593483327
+      Barnacles_18: 637165001
+      Barnacles_7: -676470370
+      Barnacles_17: 1297138202
+      Barnacles_4: -1238170800
+      Barnacles_16: -1396988016
+      Barnacles_23: 1758165570
+      Barnacles_3: 1428730555
+      Barnacles_9: 1617952807
+      Barnacles_11: -990407823
+      Barnacles_24: -1478252086
+      Barnacles_13: 406621049
+      Barnacles_39: 1447206318
+      Barnacles_45: -1385742716
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AestheticAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+    - {fileID: 2800000, guid: cbdd164269676ac409c9bf65b0ec46f6, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 1854507233, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -1993753597, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -1725324613, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 1933498807, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 124112252, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -566757700, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 1353619110, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 285219755, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -619189005, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 511617871, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -1101962151, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 1164468961, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 169098661, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 970593414, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -1892331630, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -922448747, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 1014388806, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -1174155252, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -1817408160, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 1259395971, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 587835347, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 1139388977, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 1799979216, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 216172203, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -1734413699, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 93718569, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 1376731802, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 1541785304, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 599539340, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -1199586255, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -698085198, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -360780961, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 450121888, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 477794999, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 1800245112, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -1306828866, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -1074806272, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 1955407931, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: 1577445706, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -1801166586, guid: 2d73b0801b7aa254aa54f16f387d7c7b, type: 3}
+  - {fileID: -565552911, guid: cbdd164269676ac409c9bf65b0ec46f6, type: 3}
+  - {fileID: -1294725762, guid: cbdd164269676ac409c9bf65b0ec46f6, type: 3}
+  - {fileID: -854102961, guid: cbdd164269676ac409c9bf65b0ec46f6, type: 3}
+  - {fileID: -395477361, guid: cbdd164269676ac409c9bf65b0ec46f6, type: 3}
+  - {fileID: 1839523965, guid: cbdd164269676ac409c9bf65b0ec46f6, type: 3}
+  - {fileID: -1716087702, guid: cbdd164269676ac409c9bf65b0ec46f6, type: 3}
+  - {fileID: -1875244289, guid: cbdd164269676ac409c9bf65b0ec46f6, type: 3}
+  - {fileID: -1552094587, guid: cbdd164269676ac409c9bf65b0ec46f6, type: 3}
+  - {fileID: -646224074, guid: cbdd164269676ac409c9bf65b0ec46f6, type: 3}
+  - {fileID: -1258041633, guid: cbdd164269676ac409c9bf65b0ec46f6, type: 3}
+  - {fileID: 75254752, guid: cbdd164269676ac409c9bf65b0ec46f6, type: 3}
+  - {fileID: -546413631, guid: cbdd164269676ac409c9bf65b0ec46f6, type: 3}
+  - {fileID: -1885475552, guid: cbdd164269676ac409c9bf65b0ec46f6, type: 3}
+  - {fileID: 923391898, guid: cbdd164269676ac409c9bf65b0ec46f6, type: 3}
+  - {fileID: -544924849, guid: cbdd164269676ac409c9bf65b0ec46f6, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Signs_8
+  - Signs_9
+  - Signs_6
+  - Signs_7
+  - Signs_4
+  - Signs_5
+  - Signs_2
+  - Signs_3
+  - Signs_0
+  - Signs_1
+  - Signs_24
+  - Signs_25
+  - Signs_26
+  - Signs_27
+  - Signs_37
+  - Signs_20
+  - Signs_36
+  - Signs_21
+  - Signs_35
+  - Signs_22
+  - Signs_34
+  - Signs_23
+  - Signs_33
+  - Signs_32
+  - Signs_31
+  - Signs_30
+  - Signs_28
+  - Signs_29
+  - Signs_39
+  - Signs_38
+  - Signs_19
+  - Signs_18
+  - Signs_15
+  - Signs_14
+  - Signs_17
+  - Signs_16
+  - Signs_11
+  - Signs_10
+  - Signs_13
+  - Signs_12
+  - OtherAesthetics_7
+  - OtherAesthetics_6
+  - OtherAesthetics_5
+  - OtherAesthetics_4
+  - OtherAesthetics_3
+  - OtherAesthetics_2
+  - OtherAesthetics_1
+  - OtherAesthetics_0
+  - OtherAesthetics_9
+  - OtherAesthetics_8
+  - OtherAesthetics_12
+  - OtherAesthetics_13
+  - OtherAesthetics_10
+  - OtherAesthetics_11
+  - OtherAesthetics_14
+  m_RenderDataMap: {}
+  m_Tag: AestheticAtlas
+  m_IsVariant: 0
