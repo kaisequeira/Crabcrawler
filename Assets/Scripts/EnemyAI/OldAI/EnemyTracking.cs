@@ -11,7 +11,6 @@ public class EnemyTracking : MonoBehaviour
         if (collision.gameObject.tag == "Player") {
             script.lockEnemyPosition = false;            
         }
-        // disable new renderer and enable moving sprite
     }
 
     void OnTriggerExit2D(Collider2D collision) {
@@ -20,8 +19,6 @@ public class EnemyTracking : MonoBehaviour
             script.x_temp = transform.position.x;
             script.y_temp = transform.position.y;
             script.z_temp = transform.position.z;
-            // set new renderer to current position
-            // disable moving sprite and set new renderer enabled
         }
     }
 }

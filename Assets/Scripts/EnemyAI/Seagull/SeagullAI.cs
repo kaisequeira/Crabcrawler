@@ -2,80 +2,148 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using System;
 
 public class SeagullAI : MonoBehaviour
 {
     public Transform target;
-    public bool inRange;
-    public bool seagullFacingLeft;
-    public bool startIdle;
+    public bool inRange = false;
+    public bool seagullFacingLeft = true;
+    public PlayerController playerController;
+    public Animator animator;
+
+    private enum IdleType {
+        Stationary,
+        Moving
+    }
+
+    public enum SeagullState {
+        TrackingSpawn,
+        Idle,
+        TrackingPlayer,
+    }
 
     [SerializeField] private float speed;
     [SerializeField] private float idleSpeed;
     [SerializeField] private float idleRange;
     [SerializeField] private float nextWaypointDistance;
+    [SerializeField] private float baseRange;
+    [SerializeField] private float increasedRange;
+    [SerializeField] private IdleType idleType;
 
     Path path;
     int currentWaypoint = 0;
-    private float initialIdleX;
-    //bool reachedEndOfPath = false;  
-
+    public SeagullState currentState = SeagullState.Idle;
+    private Vector2 initialPosition;
+    private bool playerObscured = false;
+    private float inWaterTimer = 0f;
+    
     Seeker seeker;
     Rigidbody2D RB2D;
 
     void Start() {
         seeker = GetComponent<Seeker>();
         RB2D = GetComponent<Rigidbody2D>();
-        inRange = false;
-        seagullFacingLeft = true;
-        startIdle = true;
-        initialIdleX = transform.position.x;
+        initialPosition = transform.position - new Vector3(0f, 0.04f, 0f);
 
         InvokeRepeating("UpdatePath", 0f, 0.5f);
     }
 
     void UpdatePath() {
-        if (seeker.IsDone()) {
-            seeker.StartPath(RB2D.position, target.position, OnPathComplete);
+        if (seeker.IsDone() && currentState != SeagullState.Idle) {
+            seeker.StartPath(
+                RB2D.position,
+                currentState == SeagullState.TrackingPlayer
+                    ? target.position : initialPosition,
+                OnPathComplete);
         }
     }
 
     void OnPathComplete(Path p) {
         if (!p.error) {
             path = p;
-            currentWaypoint = 0;
+        }
+    }
+
+    void Update() {
+        animator.SetBool("inRange", currentState == SeagullState.TrackingPlayer);
+        if (currentState == SeagullState.TrackingPlayer && !GetComponent<AudioSource>().isPlaying) {
+            GetComponent<AudioSource>().Play();   
+        } else if (currentState != SeagullState.TrackingPlayer && GetComponent<AudioSource>().isPlaying) {
+            GetComponent<AudioSource>().Stop();
         }
     }
 
     void FixedUpdate() {
+        if (playerController.inWater) {
+            inWaterTimer += Time.fixedDeltaTime;
+            if (inWaterTimer > 2f) {
+                playerObscured = true;
+            }
+        } else {
+            inWaterTimer = 0f;
+            playerObscured = false;
+        }
+
+        if (!inRange && Vector2.Distance(RB2D.position, target.position) < baseRange) {
+            inRange = true;
+        } else if ((inRange && Vector2.Distance(RB2D.position, target.position) > increasedRange) || playerObscured) {
+            inRange = false;
+        }
+
+        if (inRange && !playerObscured) {
+            currentState = SeagullState.TrackingPlayer;
+        } else if (currentState == SeagullState.TrackingPlayer) {
+            currentState = SeagullState.TrackingSpawn;
+        } else if (currentState == SeagullState.TrackingSpawn && Vector2.Distance(RB2D.position, initialPosition) < 0.05f) {
+            currentState = SeagullState.Idle;
+        }
+
+        if (currentState == SeagullState.Idle) {
+            IdleBehaviour();
+        } else {
+            TrackingBehaviour();
+        }
+    }
+
+    private void TrackingBehaviour() {
         if (path == null) {
             return;
         }
 
-        if (currentWaypoint >= path.vectorPath.Count) {
-            //reachedEndOfPath = true;
-            return;
-        } else {
-            //reachedEndOfPath = false;
+        animator.SetBool("stationaryIdle", false);
+
+        // Manual Tracking Override - Spawn
+        if (currentWaypoint >= path.vectorPath.Count && currentState == SeagullState.TrackingSpawn) {
+            Vector3 returnDirection = (initialPosition - RB2D.position).normalized;
+            Vector2 returnforce = returnDirection * speed * Time.deltaTime;
+            RB2D.AddForce(returnforce);
         }
-        
-        Vector3 direction = ((Vector2)path.vectorPath[currentWaypoint] - RB2D.position).normalized;
-        Vector2 force = direction * speed * Time.deltaTime;
-        
-        if (inRange) {
-            RB2D.AddForce(force);
-        } else if (!startIdle) {
-            if (seagullFacingLeft) {
-                if (transform.position.x - initialIdleX <= -idleRange) {
-                    FlipRight();
-                }
-                RB2D.velocity = new Vector2(-idleSpeed, 0f);
-                } else {
-                if (transform.position.x - initialIdleX >= idleRange) {
-                    FlipLeft();
-                }
-                RB2D.velocity = new Vector2(idleSpeed, 0f);
-            }
+
+        // Manual Tracking Override - Player
+        if (currentWaypoint >= path.vectorPath.Count &&
+            currentState == SeagullState.TrackingPlayer &&
+            Vector2.Distance(RB2D.position, target.position) < 2f &&
+            !playerController.inWater) 
+        {
+            Vector3 playerDirection = ((Vector2)target.position - RB2D.position).normalized;
+            Vector2 playerforce = playerDirection * speed * Time.deltaTime;
+            RB2D.AddForce(playerforce);
+        }
+
+        if (currentWaypoint >= path.vectorPath.Count) {
+            return;
+        }
+
+        // A* Pathfinding
+        Vector3 waypointDirection = ((Vector2)path.vectorPath[currentWaypoint] - RB2D.position).normalized;
+        Vector2 force = waypointDirection * speed * Time.deltaTime;
+        RB2D.AddForce(force);
+
+        if (RB2D.velocity.x >= 0.01f && force.x > 0f) {
+            FlipRight();
+        } else if (RB2D.velocity.x <= -0.01 && force.x < 0f) {
+            FlipLeft();
         }
 
         float distance = Vector2.Distance(RB2D.position, path.vectorPath[currentWaypoint]);
@@ -83,11 +151,27 @@ public class SeagullAI : MonoBehaviour
         if (distance < nextWaypointDistance) {
             currentWaypoint ++;
         }
+    }
 
-       if (RB2D.velocity.x >= 0.01f && force.x > 0f) {
-            FlipRight();
-        } else if (RB2D.velocity.x <= -0.01 && force.x < 0f) {
-            FlipLeft();
+    private void IdleBehaviour() {
+        if (idleType == IdleType.Stationary) {
+            animator.SetBool("stationaryIdle", true);
+            RB2D.velocity = new Vector2(0f, 0f);
+            return;
+        }
+
+        animator.SetBool("movingIdle", true);
+
+        if (seagullFacingLeft) {
+            if (transform.position.x - initialPosition.x <= -idleRange) {
+                FlipRight();
+            }
+            RB2D.velocity = new Vector2(-idleSpeed, 0f);
+        } else {
+            if (transform.position.x - initialPosition.x >= idleRange) {
+                FlipLeft();
+            }
+            RB2D.velocity = new Vector2(idleSpeed, 0f);
         }
     }
 
@@ -99,9 +183,5 @@ public class SeagullAI : MonoBehaviour
     public void FlipRight() {
         transform.localScale = new Vector3(-1f, 1f, 1f);
         seagullFacingLeft = false;
-    }
-
-    public void UpddateIdleStart() {
-        initialIdleX = transform.position.x;
     }
 }

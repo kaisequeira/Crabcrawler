@@ -27,7 +27,7 @@ public class FlipColliderSeagull : MonoBehaviour
     void FixedUpdate() {
         timeElapsed += Time.deltaTime;
 
-        if (inWall && !script.inRange && timeElapsed > 0.5f) {
+        if (inWall && script.currentState == SeagullAI.SeagullState.Idle  && timeElapsed > 0.5f) {
             timeElapsed = 0f;
             if (script.seagullFacingLeft) {
                 script.FlipRight();

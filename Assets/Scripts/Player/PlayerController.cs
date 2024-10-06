@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     public CapsuleCollider2D crabCollider;
     private float horizontal;
     public float baseGravity;
-    // private bool facingRight = true;
 
     public BoxCollider2D boxCast;
     public bool playerDead;
@@ -39,17 +38,10 @@ public class PlayerController : MonoBehaviour
 
     void Update() {
         RB2D.velocity = new Vector2(horizontal * speed, RB2D.velocity.y);
-        //if (!facingRight && horizontal > 0f) {
-            //Flip();
-        //} else if (facingRight && horizontal < 0f) {
-            //Flip();
-        //}
     }
 
     void FixedUpdate() {
         // Ground check
-
-        //onGround = Physics2D.Raycast(transform.position, Vector2.down, groundLength, groundLayer); using raycast
         onGround = Physics2D.BoxCast(boxCast.bounds.center, boxCast.bounds.size, 0f, Vector2.down, 0f, groundLayers);
         onPlatform = Physics2D.BoxCast(boxCast.bounds.center, boxCast.bounds.size, 0f, Vector2.down, 0f, platformLayer);
 
@@ -171,13 +163,6 @@ public class PlayerController : MonoBehaviour
             inCrouch = false;
         }
     }
-
-    //private void Flip() {
-        //facingRight = !isFacingRight;
-        //Vector3 localScale = transform.localScale;
-        //localScale.x *= -1f;
-        //transform.localscale = localScale;
-    //}
 
     void CreateWaterIn() {
         waterParticlesIn.Play();

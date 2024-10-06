@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,32 +7,37 @@ public class InRangeDogfish : MonoBehaviour
 {
     public DogfishAI script;
     public Animator animator;
-    public CapsuleCollider2D dogfishCollider;
+    public Rigidbody2D RB2D_player;
     public PlayerController playerScript;
-
-    void Start() {
-        playerScript = FindObjectOfType<PlayerController>();
-    }
-
-    void FixedUpdate() {
-        if (script.inRange && playerScript.inWater) {
-            dogfishCollider.size = new Vector2(0.35f, 0.12f);
-        } else if (!script.inRange || !playerScript.inWater) {
-            dogfishCollider.size = new Vector2(0.35f, 0.28f);
-        }
-    }
+    public Rigidbody2D RB2D_dogfish;
+    private bool inZone = false;
+    private float cooldownTimer = 0f;
+    private const float cooldownDuration = 0.75f;
 
     void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Player") {
-            script.inRange = true;
-            animator.SetBool("inRange", script.inRange);
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "WaterPlayerCheck" && playerScript.inWater) {
+            inZone = true;
+            cooldownTimer = 0f; // Reset cooldown timer if player reenters the zone
         }
     }
 
     void OnTriggerExit2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Player") {
-            script.inRange = false;
-            animator.SetBool("inRange", script.inRange); 
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "WaterPlayerCheck") {
+            inZone = false;
+            cooldownTimer = cooldownDuration; // Start cooldown timer
+        }
+    }
+
+    void FixedUpdate() {
+        if (inZone) {
+            script.enraged = true;
+            animator.SetBool("inRange", script.enraged); 
+        } else if (cooldownTimer > 0) {
+            cooldownTimer -= Time.fixedDeltaTime;
+            if (cooldownTimer <= 0) {
+                script.enraged = false;
+                animator.SetBool("inRange", script.enraged);
+            }
         }
     }
 }

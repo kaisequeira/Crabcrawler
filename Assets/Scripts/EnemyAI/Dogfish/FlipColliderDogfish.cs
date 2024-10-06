@@ -5,8 +5,8 @@ using UnityEngine;
 public class FlipColliderDogfish : MonoBehaviour
 {
     public DogfishAI script;
-    public PlayerController playerScript;
     public bool inWall;
+    public Animator animator;
     private float timeElapsed;
     [SerializeField] private bool disableFlipReduction;
 
@@ -29,12 +29,17 @@ public class FlipColliderDogfish : MonoBehaviour
     void FixedUpdate() {
         timeElapsed += Time.deltaTime;
 
-        if (inWall && (!script.inRange || !playerScript.inWater) && (timeElapsed > 0.5f || disableFlipReduction)) {
+        if (inWall && (timeElapsed > 0.5f || disableFlipReduction)) {
             timeElapsed = 0f;
             if (script.dogfishFacingLeft) {
                 script.FlipRight();
             } else {
                 script.FlipLeft();
+            }
+            
+            if (script.enraged) {
+                script.enraged = false;
+                animator.SetBool("inRange", false);
             }
         }
     }

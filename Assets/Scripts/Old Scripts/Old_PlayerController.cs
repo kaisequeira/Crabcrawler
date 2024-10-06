@@ -14,7 +14,6 @@ public class Old_PlayerController : MonoBehaviour
     private float moveVertical;
     private float moveHorizontal;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb2D = gameObject.GetComponent<Rigidbody2D>();
@@ -22,7 +21,6 @@ public class Old_PlayerController : MonoBehaviour
         onGround = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
         moveHorizontal = Input.GetAxisRaw("Horizontal");
@@ -46,13 +44,11 @@ public class Old_PlayerController : MonoBehaviour
             animator.SetBool("Crouch", true);
         }
 
-        // Resets crouch when the vertical input is not down
         if (!(moveVertical <= -0.01f)) {
             animator.SetBool("Crouch", false);
             crab_collider.size = new Vector2(0.27f, 0.16f);
         }
 
-        // Animations
         animator.SetFloat("Velocity", rb2D.velocity.x);
         if (rb2D.velocity.y < -0.1f) {
             animator.SetBool("Falling", true);

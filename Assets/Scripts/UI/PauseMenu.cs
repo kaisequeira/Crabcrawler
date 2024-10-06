@@ -44,7 +44,7 @@ public class PauseMenu : MonoBehaviour
     public void PauseGame() {
         if (!WinScript.levelWon && !GameOverScript.GameOv) {
             Time.timeScale = 0f;
-            AudioListener.pause = true;
+            SettingsSystem.PauseGameAudio();
             EventSystem.current.SetSelectedGameObject(selectButton);
             paused = true;
             pausedMenu.SetActive(true);
@@ -57,7 +57,7 @@ public class PauseMenu : MonoBehaviour
             settingsScript.ExitSettings();
         }
         Time.timeScale = 1f;
-        AudioListener.pause = false;
+        SettingsSystem.ResumeGameAudio();
         EventSystem.current.SetSelectedGameObject(null);
         paused = false;
         pausedMenu.SetActive(false);
@@ -67,6 +67,5 @@ public class PauseMenu : MonoBehaviour
             FindObjectOfType<SettingsSystem>().pauseReset = false;
             FindObjectOfType<SettingsSystem>().MusicEnabled();            
         }
-
     }
 }

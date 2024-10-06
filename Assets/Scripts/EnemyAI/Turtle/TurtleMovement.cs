@@ -10,9 +10,7 @@ public class TurtleMovement : MonoBehaviour
     public Rigidbody2D RB2D;
     public bool isAgro;
     public bool turtleFacingLeft;
-    private float startpos_x;
     public Animator animator;
-    private bool alreadyPlaying;
 
     void Start() {
         turtleFacingLeft = true;

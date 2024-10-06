@@ -8,7 +8,6 @@ public class FlipEnemyAI : MonoBehaviour
 
     public AIPath aiPath;
 
-    // Update is called once per frame
     void Update()
     {
         if (aiPath.desiredVelocity.x >= 0.01f) {

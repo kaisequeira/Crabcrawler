@@ -12,8 +12,6 @@ public class SettingsSystem : MonoBehaviour
 {
     public static bool inSettings = false;
     public static bool musicPaused;
-    private float volumeStart;
-    private bool result;
     private bool initialiseSwitch;
     public bool pauseReset;
     [SerializeField] private PauseMenu pauseScript;
@@ -35,44 +33,15 @@ public class SettingsSystem : MonoBehaviour
 
     public Toggle musicToggle;
     public Slider volumeSlider;
-    public TMP_Dropdown qualityDropdown;
-    public TMP_Dropdown resolutionDropdown;
     public AudioMixer audioMixer;
     public AudioMixer musicMixer;
-    public RenderPipelineAsset[] qualityLevels;
-
-    Resolution[] resolutions;
 
     void Start() {
-        resolutions = Screen.resolutions;
-
-        resolutionDropdown.ClearOptions();
-        List<string> options = new List<string>();
-
-        int currentResolutionIndex = 0;
-        for (int i = 0; i < resolutions.Length; i ++) {
-            string option = resolutions[i].width + " x " + resolutions[i].height + " " + resolutions[i].refreshRate + "hz";
-            options.Add(option);
-
-            if (resolutions[i].width == Screen.width &&
-            resolutions[i].height == Screen.height) {
-                currentResolutionIndex = i;
-            }
-        }
-        resolutionDropdown.AddOptions(options);
-        resolutionDropdown.value = currentResolutionIndex;
-        resolutionDropdown.RefreshShownValue();
-
         initialiseSwitch = true;
         musicToggle.isOn = musicPaused;
         initialiseSwitch = false;
-        qualityDropdown.value = QualitySettings.GetQualityLevel();
-        result = audioMixer.GetFloat("volume", out volumeStart);
-        if (result) {
-            volumeSlider.value = volumeStart;
-        } else {
-            volumeSlider.value = 0f;
-        }
+        volumeSlider.value = 80;
+        SetVolume(volumeSlider.value);
     }
 
     public void EnterSettings() {
@@ -110,14 +79,17 @@ public class SettingsSystem : MonoBehaviour
         SettingsMenu.SetActive(false);
     }
 
-    public void SetVolume(float volume) {
-        audioMixer.SetFloat("volume", volume);
-        musicMixer.SetFloat("musicVolume", volume);
-    }
+    public void SetVolume(float volume)
+    {
+        // Ensure the input volume is clamped between 0 and 100
+        volume = Mathf.Clamp(volume, 0.0001f, 100f); // Avoid using zero to prevent log(0) issues
 
-    public void SetQuality(int qualityindex) {
-        QualitySettings.SetQualityLevel(qualityindex);
-        QualitySettings.renderPipeline = qualityLevels[qualityindex];
+        // Convert linear volume (0 to 100) to logarithmic scale (-80 to 0 dB)
+        float logVolume = Mathf.Log10(volume / 100f) * 20f;  // Scales it to the range -80 to 0
+
+        // Apply the volume to the audio mixer
+        audioMixer.SetFloat("volume", logVolume);
+        musicMixer.SetFloat("musicVolume", logVolume);
     }
 
     public void SetFullscreen(bool isFullscreen) {
@@ -140,8 +112,21 @@ public class SettingsSystem : MonoBehaviour
         }
     }
 
-    public void SetResolution(int resolutionIndex) {
-        Resolution resolution = resolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    public static void PauseGameAudio() {
+        AudioManager audioManager = FindObjectOfType<AudioManager>();
+        foreach (Sound audioSource in audioManager.sounds) {
+            if (audioSource.source != null) {
+                audioSource.source.Pause();
+            }
+        }
+    }
+
+    public static void ResumeGameAudio() {
+        AudioManager audioManager = FindObjectOfType<AudioManager>();
+        foreach (Sound audioSource in audioManager.sounds) {
+            if (audioSource.source != null) {
+                audioSource.source.UnPause();
+            }
+        }
     }
 }

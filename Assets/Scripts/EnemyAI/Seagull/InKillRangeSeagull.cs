@@ -4,19 +4,13 @@ using UnityEngine;
 
 public class InKillRangeSeagull : MonoBehaviour
 {
-    public PlayerHealth script;
+    public PlayerHealth playerScript;
 
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Player") {
-            if (!script.isDead) {
-                script.removeHealth();
+            if (!playerScript.isDead) {
+                playerScript.removeHealth();
             }    
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Player") {
-            // stun enemy
         }
     }
 }

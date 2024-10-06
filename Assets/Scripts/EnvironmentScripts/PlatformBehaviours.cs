@@ -16,7 +16,7 @@ public class PlatformBehaviours : MonoBehaviour
     void FixedUpdate() {
         if (playerscript.inCrouch && playerscript.onPlatform) {
             effector.colliderMask = noPlayerMask;
-        } else if (!playerscript.inCrouch && effector.colliderMask == noPlayerMask) {
+        } else if (!playerscript.inCrouch && effector.colliderMask == noPlayerMask && !playerscript.onPlatform) {
             effector.colliderMask = playerMask;
         }
     }
