@@ -9,7 +9,7 @@ public class PufferfishFloorCheck : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Ground") {
-            RB2D.velocity = new Vector2(0f, 0f);
+            RB2D.linearVelocity = new Vector2(0f, 0f);
             startFloat = true;
         }
     }

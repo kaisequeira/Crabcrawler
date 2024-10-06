@@ -9,7 +9,7 @@ public class TurtleBounce : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Player") {
-            RB2D_player.velocity = new Vector2(RB2D_player.velocity.x * 0f, jumpVelocity);
+            RB2D_player.linearVelocity = new Vector2(RB2D_player.linearVelocity.x * 0f, jumpVelocity);
             AudioManager.instance.Play("TurtleBounce");
         }
     }

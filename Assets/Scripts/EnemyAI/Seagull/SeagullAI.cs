@@ -140,9 +140,9 @@ public class SeagullAI : MonoBehaviour
         Vector2 force = waypointDirection * speed * Time.deltaTime;
         RB2D.AddForce(force);
 
-        if (RB2D.velocity.x >= 0.01f && force.x > 0f) {
+        if (RB2D.linearVelocity.x >= 0.01f && force.x > 0f) {
             FlipRight();
-        } else if (RB2D.velocity.x <= -0.01 && force.x < 0f) {
+        } else if (RB2D.linearVelocity.x <= -0.01 && force.x < 0f) {
             FlipLeft();
         }
 
@@ -156,7 +156,7 @@ public class SeagullAI : MonoBehaviour
     private void IdleBehaviour() {
         if (idleType == IdleType.Stationary) {
             animator.SetBool("stationaryIdle", true);
-            RB2D.velocity = new Vector2(0f, 0f);
+            RB2D.linearVelocity = new Vector2(0f, 0f);
             return;
         }
 
@@ -166,12 +166,12 @@ public class SeagullAI : MonoBehaviour
             if (transform.position.x - initialPosition.x <= -idleRange) {
                 FlipRight();
             }
-            RB2D.velocity = new Vector2(-idleSpeed, 0f);
+            RB2D.linearVelocity = new Vector2(-idleSpeed, 0f);
         } else {
             if (transform.position.x - initialPosition.x >= idleRange) {
                 FlipLeft();
             }
-            RB2D.velocity = new Vector2(idleSpeed, 0f);
+            RB2D.linearVelocity = new Vector2(idleSpeed, 0f);
         }
     }
 

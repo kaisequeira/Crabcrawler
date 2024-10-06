@@ -17,24 +17,24 @@ public class PufferfishMovement : MonoBehaviour
             RB2D.AddForce(new Vector2(0f, FloatForceApplied));
         } 
 
-        if (RB2D.velocity.y >= 0) {
+        if (RB2D.linearVelocity.y >= 0) {
             Invoke("IncreaseSize", 0.1f);
-            animator.SetFloat("Velocity", RB2D.velocity.y);
+            animator.SetFloat("Velocity", RB2D.linearVelocity.y);
             // alter size
-        } else if (RB2D.velocity.y < 0) {
+        } else if (RB2D.linearVelocity.y < 0) {
             DecreaseSize();
-            animator.SetFloat("Velocity", RB2D.velocity.y);
+            animator.SetFloat("Velocity", RB2D.linearVelocity.y);
             // alter size
             if (!waterScript.inWater) {
                 floorScript.startFloat = false;
             }
         }
 
-        if (RB2D.velocity.y < -0.5f && waterScript.inWater) {
-            if (RB2D.velocity.y + Mathf.Abs(RB2D.velocity.y * 0.05f) > -0.5f) {
-                RB2D.velocity = new Vector2(0f, -0.5f);
+        if (RB2D.linearVelocity.y < -0.5f && waterScript.inWater) {
+            if (RB2D.linearVelocity.y + Mathf.Abs(RB2D.linearVelocity.y * 0.05f) > -0.5f) {
+                RB2D.linearVelocity = new Vector2(0f, -0.5f);
             } else {
-                RB2D.velocity = new Vector2(0f, RB2D.velocity.y + Mathf.Abs(RB2D.velocity.y * 0.05f));
+                RB2D.linearVelocity = new Vector2(0f, RB2D.linearVelocity.y + Mathf.Abs(RB2D.linearVelocity.y * 0.05f));
             }
         }
     }

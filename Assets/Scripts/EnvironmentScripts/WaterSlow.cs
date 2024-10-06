@@ -18,7 +18,7 @@ public class WaterSlow : MonoBehaviour
 
     void Start() {
         tempGravScale = playerRB2D.gravityScale;
-        tempLinearDrag = playerRB2D.drag;
+        tempLinearDrag = playerRB2D.linearDamping;
         tempSpeed = script.speed;
         tempJumpForce = script.jumpingForce;
         script.inWater = false;
@@ -27,10 +27,10 @@ public class WaterSlow : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "WaterPlayerCheck") {
             script.baseGravity = gravScale;
-            playerRB2D.drag = linearDrag;
+            playerRB2D.linearDamping = linearDrag;
             script.speed = waterSpeed;
             script.jumpingForce = waterJump;
-            playerRB2D.velocity = new Vector2(playerRB2D.velocity.x, playerRB2D.velocity.y * 0.3f);
+            playerRB2D.linearVelocity = new Vector2(playerRB2D.linearVelocity.x, playerRB2D.linearVelocity.y * 0.3f);
             script.inWater = true;
         }
     }
@@ -38,7 +38,7 @@ public class WaterSlow : MonoBehaviour
     void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject.tag == "WaterPlayerCheck") {
             script.baseGravity = tempGravScale;
-            playerRB2D.drag = tempLinearDrag;
+            playerRB2D.linearDamping = tempLinearDrag;
             script.speed = tempSpeed;
             script.jumpingForce = tempJumpForce;
             script.inWater = false;

@@ -22,9 +22,9 @@ public class DogfishAI : MonoBehaviour
 
     void FixedUpdate() {
         if (dogfishFacingLeft) {
-            RB2D.velocity = new Vector2(-(enraged ? rageSpeed : idleSpeed), 0f);
+            RB2D.linearVelocity = new Vector2(-(enraged ? rageSpeed : idleSpeed), 0f);
         } else {
-            RB2D.velocity = new Vector2(enraged ? rageSpeed : idleSpeed, 0f);
+            RB2D.linearVelocity = new Vector2(enraged ? rageSpeed : idleSpeed, 0f);
         }
     }
 

@@ -98,12 +98,12 @@ public class SettingsSystem : MonoBehaviour
 
     public void MusicEnabled() {
         if (!initialiseSwitch) {
-            if (mainMenu || !FindObjectOfType<PauseMenu>().paused) {
-                if (FindObjectOfType<AudioManager>().isPlaying("CrawlyCritters")) {
-                    FindObjectOfType<AudioManager>().StopPlaying("CrawlyCritters");
+            if (mainMenu || !FindFirstObjectByType<PauseMenu>().paused) {
+                if (FindFirstObjectByType<AudioManager>().isPlaying("CrawlyCritters")) {
+                    FindFirstObjectByType<AudioManager>().StopPlaying("CrawlyCritters");
                     musicPaused = true;
                 } else {
-                    FindObjectOfType<AudioManager>().Play("CrawlyCritters");
+                    FindFirstObjectByType<AudioManager>().Play("CrawlyCritters");
                     musicPaused = false;
                 }
             } else {
@@ -113,7 +113,7 @@ public class SettingsSystem : MonoBehaviour
     }
 
     public static void PauseGameAudio() {
-        AudioManager audioManager = FindObjectOfType<AudioManager>();
+        AudioManager audioManager = FindFirstObjectByType<AudioManager>();
         foreach (Sound audioSource in audioManager.sounds) {
             if (audioSource.source != null) {
                 audioSource.source.Pause();
@@ -122,7 +122,7 @@ public class SettingsSystem : MonoBehaviour
     }
 
     public static void ResumeGameAudio() {
-        AudioManager audioManager = FindObjectOfType<AudioManager>();
+        AudioManager audioManager = FindFirstObjectByType<AudioManager>();
         foreach (Sound audioSource in audioManager.sounds) {
             if (audioSource.source != null) {
                 audioSource.source.UnPause();

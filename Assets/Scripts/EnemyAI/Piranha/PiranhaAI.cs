@@ -59,9 +59,9 @@ public class PiranhaAI : MonoBehaviour
             RB2D.AddForce(force);
         } else {
             if (piranhaLeft) {
-                RB2D.velocity = new Vector2(-idleSpeed, 0f);
+                RB2D.linearVelocity = new Vector2(-idleSpeed, 0f);
             } else {
-                RB2D.velocity = new Vector2(idleSpeed, 0f);
+                RB2D.linearVelocity = new Vector2(idleSpeed, 0f);
             }
         }
 
@@ -71,15 +71,15 @@ public class PiranhaAI : MonoBehaviour
             currentWaypoint ++;
         }
 
-        if (RB2D.velocity.x >= 0.01f && force.x > 0f) {
+        if (RB2D.linearVelocity.x >= 0.01f && force.x > 0f) {
             FlipRight();
-        } else if (RB2D.velocity.x <= -0.01 && force.x < 0f) {
+        } else if (RB2D.linearVelocity.x <= -0.01 && force.x < 0f) {
             FlipLeft();
         }
     }
 
     void LateUpdate() {
-        animator.SetFloat("desiredYVelocity", RB2D.velocity.y);
+        animator.SetFloat("desiredYVelocity", RB2D.linearVelocity.y);
     }
 
     public void FlipLeft() {

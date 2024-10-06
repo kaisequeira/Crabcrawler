@@ -23,15 +23,15 @@ public class TurtleMovement : MonoBehaviour
         animator.SetBool("Agro", isAgro);
         if (isAgro) {
             if (turtleFacingLeft) {
-                RB2D.velocity = new Vector2(-turtleSpeed * turtleAgroMultiplier, 0); 
+                RB2D.linearVelocity = new Vector2(-turtleSpeed * turtleAgroMultiplier, 0); 
             } else {
-                RB2D.velocity = new Vector2(turtleSpeed * turtleAgroMultiplier, 0); 
+                RB2D.linearVelocity = new Vector2(turtleSpeed * turtleAgroMultiplier, 0); 
             }
         } else {
             if (turtleFacingLeft) {
-                RB2D.velocity = new Vector2(-turtleSpeed, 0); 
+                RB2D.linearVelocity = new Vector2(-turtleSpeed, 0); 
             } else {
-                RB2D.velocity = new Vector2(turtleSpeed, 0); 
+                RB2D.linearVelocity = new Vector2(turtleSpeed, 0); 
             }            
         }              
     }

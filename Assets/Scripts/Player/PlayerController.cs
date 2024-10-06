@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public float fallMultiplier;
 
     void Update() {
-        RB2D.velocity = new Vector2(horizontal * speed, RB2D.velocity.y);
+        RB2D.linearVelocity = new Vector2(horizontal * speed, RB2D.linearVelocity.y);
     }
 
     void FixedUpdate() {
@@ -53,12 +53,12 @@ public class PlayerController : MonoBehaviour
         } else {
             // Crouch behaviours in water
             if (onGround || inWater) {
-                RB2D.velocity = new Vector2(0f, RB2D.velocity.y);
+                RB2D.linearVelocity = new Vector2(0f, RB2D.linearVelocity.y);
                 crabCollider.size = new Vector2(0.17f, 0.16f);
                 animator.SetBool("Crouch", true);  
             }
             if (inWater && !inBubbleBlast) {
-                RB2D.velocity = new Vector2(0f, waterCrouchFall);
+                RB2D.linearVelocity = new Vector2(0f, waterCrouchFall);
             } else if (inWater && inBubbleBlast) {
                 RB2D.AddForce(new Vector2(0f, waterBubbleRise));
             }
@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // Gravity fall multiplier
-        if (RB2D.velocity.y < -0.01f) {
+        if (RB2D.linearVelocity.y < -0.01f) {
             RB2D.gravityScale = baseGravity * (fallMultiplier - 1);
         } else {
             RB2D.gravityScale = baseGravity;
@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
                 if (!onPlatform) {
                     CreateDust();
                 }
-                RB2D.velocity = new Vector2(RB2D.velocity.x, jumpingForce * 0.75f);
+                RB2D.linearVelocity = new Vector2(RB2D.linearVelocity.x, jumpingForce * 0.75f);
                 coyoteTimeCounter = 0;
                 bufferTimeCounter = 0;
             } else {
@@ -99,23 +99,23 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        animator.SetFloat("Velocity", RB2D.velocity.x);
-        if (RB2D.velocity.y < -0.01f) {
+        animator.SetFloat("Velocity", RB2D.linearVelocity.x);
+        if (RB2D.linearVelocity.y < -0.01f) {
             animator.SetBool("Falling", true);
-        } else if (RB2D.velocity.y >= -0.01f) {
+        } else if (RB2D.linearVelocity.y >= -0.01f) {
             animator.SetBool("Falling", false);
         }
-        if (RB2D.velocity.y > 0.1f && !inBubbleBlast) {
+        if (RB2D.linearVelocity.y > 0.1f && !inBubbleBlast) {
             animator.SetBool("Jump", true);
         } else {
             animator.SetBool("Jump", false);            
         }
 
-        if (onGround && !onPlatform && Mathf.Abs(RB2D.velocity.x) > 0 &&
+        if (onGround && !onPlatform && Mathf.Abs(RB2D.linearVelocity.x) > 0 &&
             !AudioManager.instance.isPlaying("SandSteps")) {
             AudioManager.instance.Play("SandSteps");
         }
-        if (onPlatform && Mathf.Abs(RB2D.velocity.x) > 0 &&
+        if (onPlatform && Mathf.Abs(RB2D.linearVelocity.x) > 0 &&
             !AudioManager.instance.isPlaying("WoodSteps")) {
             AudioManager.instance.Play("WoodSteps");
         }
@@ -139,15 +139,15 @@ public class PlayerController : MonoBehaviour
             if (!onPlatform) {
                 CreateDust();
             }
-            RB2D.velocity = new Vector2(RB2D.velocity.x, jumpingForce);
+            RB2D.linearVelocity = new Vector2(RB2D.linearVelocity.x, jumpingForce);
             coyoteTimeCounter = 0;
             bufferTimeCounter = 0;
         } else if (context.performed) {
             bufferTimeCounter = bufferTime;
         }
 
-        if (context.canceled && RB2D.velocity.y > 0f) {
-            RB2D.velocity = new Vector2(RB2D.velocity.x, RB2D.velocity.y * 0.5f);
+        if (context.canceled && RB2D.linearVelocity.y > 0f) {
+            RB2D.linearVelocity = new Vector2(RB2D.linearVelocity.x, RB2D.linearVelocity.y * 0.5f);
         }
     }
 

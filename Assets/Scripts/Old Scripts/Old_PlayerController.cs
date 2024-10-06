@@ -38,7 +38,7 @@ public class Old_PlayerController : MonoBehaviour
             rb2D.AddForce(new Vector2(0f, moveVertical * jumpForce), ForceMode2D.Impulse);
             animator.SetTrigger("Jump");
         } else if (onGround == true && moveVertical <= -0.1f) {
-            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
             crab_collider.size = new Vector2(0.16f, 0.16f);
             animator.ResetTrigger("Jump");
             animator.SetBool("Crouch", true);
@@ -49,10 +49,10 @@ public class Old_PlayerController : MonoBehaviour
             crab_collider.size = new Vector2(0.27f, 0.16f);
         }
 
-        animator.SetFloat("Velocity", rb2D.velocity.x);
-        if (rb2D.velocity.y < -0.1f) {
+        animator.SetFloat("Velocity", rb2D.linearVelocity.x);
+        if (rb2D.linearVelocity.y < -0.1f) {
             animator.SetBool("Falling", true);
-        } else if (rb2D.velocity.y >= -0.01) {
+        } else if (rb2D.linearVelocity.y >= -0.01) {
             animator.SetBool("Falling", false);
         }
     }
