@@ -11,7 +11,6 @@ using TMPro;
 public class SettingsSystem : MonoBehaviour
 {
     public static bool inSettings = false;
-    public static bool musicPaused;
     private bool initialiseSwitch;
     public bool pauseReset;
     [SerializeField] private PauseMenu pauseScript;
@@ -31,6 +30,7 @@ public class SettingsSystem : MonoBehaviour
     [SerializeField] private GameObject gameOverBackdrop;
     [SerializeField] private GameObject levelOverBackdrop;
 
+    public Toggle fullscreenToggle;
     public Toggle musicToggle;
     public Slider volumeSlider;
     public AudioMixer audioMixer;
@@ -38,9 +38,11 @@ public class SettingsSystem : MonoBehaviour
 
     void Start() {
         initialiseSwitch = true;
-        musicToggle.isOn = musicPaused;
+        musicToggle.isOn = SaveSystem.LoadMusicMutedState();
         initialiseSwitch = false;
-        volumeSlider.value = 80;
+        fullscreenToggle.isOn = Screen.fullScreen;
+        SetFullscreen(fullscreenToggle.isOn);
+        volumeSlider.value = SaveSystem.GetVolume();
         SetVolume(volumeSlider.value);
     }
 
@@ -48,6 +50,7 @@ public class SettingsSystem : MonoBehaviour
         inSettings = true;
         EventSystem.current.SetSelectedGameObject(selectButton);
         SettingsMenu.SetActive(true);
+        fullscreenToggle.isOn = Screen.fullScreen;
 
         if (mainMenu) {
             return;
@@ -81,6 +84,8 @@ public class SettingsSystem : MonoBehaviour
 
     public void SetVolume(float volume)
     {
+        SaveSystem.SaveVolume((int)volume);
+
         // Ensure the input volume is clamped between 0 and 100
         volume = Mathf.Clamp(volume, 0.0001f, 100f); // Avoid using zero to prevent log(0) issues
 
@@ -101,10 +106,10 @@ public class SettingsSystem : MonoBehaviour
             if (mainMenu || !FindFirstObjectByType<PauseMenu>().paused) {
                 if (FindFirstObjectByType<AudioManager>().isPlaying("CrawlyCritters")) {
                     FindFirstObjectByType<AudioManager>().StopPlaying("CrawlyCritters");
-                    musicPaused = true;
+                    SaveSystem.SaveMusicMutedState(true);
                 } else {
                     FindFirstObjectByType<AudioManager>().Play("CrawlyCritters");
-                    musicPaused = false;
+                    SaveSystem.SaveMusicMutedState(false);
                 }
             } else {
                 pauseReset = true;

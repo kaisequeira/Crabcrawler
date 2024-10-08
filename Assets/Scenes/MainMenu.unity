@@ -459,7 +459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 4
+    m_Mode: 1
     m_WrapAround: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2010,17 +2010,6 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 7219873138453615952, guid: 2a0745c780e33d9468cfff53f611b05e, type: 3}
   m_PrefabInstance: {fileID: 746049565}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &851109108 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7219873138453615953, guid: 2a0745c780e33d9468cfff53f611b05e, type: 3}
-  m_PrefabInstance: {fileID: 746049565}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1018126446 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1626027889642088425, guid: 48b9b3301cb050147aa4782af6e6d406, type: 3}
@@ -2165,7 +2154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 4
+    m_Mode: 1
     m_WrapAround: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -11619,6 +11608,7 @@ MonoBehaviour:
   pauseBackdrop: {fileID: 0}
   gameOverBackdrop: {fileID: 0}
   levelOverBackdrop: {fileID: 0}
+  fullscreenToggle: {fileID: 1768713992}
   musicToggle: {fileID: 189431838}
   volumeSlider: {fileID: 1962939785}
   audioMixer: {fileID: 24100000, guid: 007f33394000cf748ad280ffd60bfcb5, type: 2}
@@ -11921,7 +11911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 4
+    m_Mode: 1
     m_WrapAround: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -12056,7 +12046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 4
+    m_Mode: 1
     m_WrapAround: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -12320,22 +12310,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &5423722885417381081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5423722885417381083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d759ddd42ee26f44957db3ce187ceef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerControls: {fileID: 851109108}
-  LevelCompMenu: {fileID: 5423722885690644853}
-  LevelComp: 0
-  selectButton: {fileID: 5423722884466112123}
 --- !u!4 &5423722885417381082
 Transform:
   m_ObjectHideFlags: 0
@@ -12360,7 +12334,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5423722885417381082}
-  - component: {fileID: 5423722885417381081}
+  - component: {fileID: 5423722885417381084}
   m_Layer: 0
   m_Name: MainMenuSystem
   m_TagString: Untagged
@@ -12368,6 +12342,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5423722885417381084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5423722885417381083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 038b1e0324e95b14bb61e39f648de827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resumeButton: {fileID: 5423722884466112123}
+  exitButton: {fileID: 156183914}
+  eventSystem: {fileID: 5423722883881413278}
+  newGameButton: {fileID: 1027682241}
 --- !u!222 &5423722885690644850
 CanvasRenderer:
   m_ObjectHideFlags: 0

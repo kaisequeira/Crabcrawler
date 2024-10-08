@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     private bool onGround = false;
     private float coyoteTimeCounter;
     private float bufferTimeCounter;
+    private float jumpCooldown = 0.2f;
+    private float lastJumpTime = -1f;
 
     [SerializeField] ParticleSystem waterParticlesOut;
     [SerializeField] ParticleSystem waterParticlesIn;
@@ -133,19 +135,27 @@ public class PlayerController : MonoBehaviour
     }
 
     public void Jump(InputAction.CallbackContext context) {
-        if (context.performed && coyoteTimeCounter > 0) {
-            // Reset size
-            crabCollider.size = new Vector2(0.24f, 0.16f);
-            if (!onPlatform) {
-                CreateDust();
-            }
-            RB2D.linearVelocity = new Vector2(RB2D.linearVelocity.x, jumpingForce);
-            coyoteTimeCounter = 0;
-            bufferTimeCounter = 0;
-        } else if (context.performed) {
-            bufferTimeCounter = bufferTime;
-        }
+        // Check if enough time has passed since the last jump
+        if (Time.time >= lastJumpTime + jumpCooldown) {
+            if (context.performed && coyoteTimeCounter > 0) {
 
+                // Reset size
+                crabCollider.size = new Vector2(0.24f, 0.16f);
+                if (!onPlatform) {
+                    CreateDust();
+                }
+
+                RB2D.linearVelocity = new Vector2(RB2D.linearVelocity.x, jumpingForce);
+                coyoteTimeCounter = 0;
+                bufferTimeCounter = 0;
+
+                // Record the time of this jump to enforce the cooldown
+                lastJumpTime = Time.time;
+            } else if (context.performed) {
+                bufferTimeCounter = bufferTime;
+            }
+
+        }
         if (context.canceled && RB2D.linearVelocity.y > 0f) {
             RB2D.linearVelocity = new Vector2(RB2D.linearVelocity.x, RB2D.linearVelocity.y * 0.5f);
         }

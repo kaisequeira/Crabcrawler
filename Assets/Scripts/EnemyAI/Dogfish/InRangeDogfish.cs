@@ -3,6 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Handles the Dogfish's behavior when the player is within a specified range.
+/// Manages the enraged state based on the player's proximity and a cooldown timer when the player exits.
+/// </summary>
 public class InRangeDogfish : MonoBehaviour
 {
     public DogfishAI script;
@@ -10,10 +14,13 @@ public class InRangeDogfish : MonoBehaviour
     public Rigidbody2D RB2D_player;
     public PlayerController playerScript;
     public Rigidbody2D RB2D_dogfish;
-    private bool inZone = false;
-    private float cooldownTimer = 0f;
-    private const float cooldownDuration = 0.75f;
+    private bool inZone = false; // Tracks if the player is within the Dogfish's range.
+    private float cooldownTimer = 0f; // Timer to control how long the Dogfish remains enraged after the player exits the range.
+    private const float cooldownDuration = 0.75f; // Duration for which the Dogfish stays enraged after player exits.
 
+    /// <summary>
+    /// Detects when the player enters the Dogfish's range or water.
+    /// </summary>
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "WaterPlayerCheck" && playerScript.inWater) {
             inZone = true;
@@ -21,6 +28,9 @@ public class InRangeDogfish : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Detects when the player exits the Dogfish's range or water and starts the cooldown timer.
+    /// </summary>
     void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "WaterPlayerCheck") {
             inZone = false;
@@ -28,6 +38,9 @@ public class InRangeDogfish : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Updates the enraged state of the Dogfish while the player is within range or handles the cooldown after the player exits.
+    /// </summary>
     void FixedUpdate() {
         if (inZone) {
             script.enraged = true;
