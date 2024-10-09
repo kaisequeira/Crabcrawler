@@ -2,13 +2,11 @@
 
 ## 🦀 About the Project
 
-Crab Crawler is an engaging 2D pixel art platformer game initially developed early in my software engineering journey. This project served as a practical exploration into object-oriented programming principles and game development, with my own custom pixel art, sound design, custom music and showcases my ability to apply computer science principles in an app development context.
+Crab Crawler is an 2D pixel art platformer game where you play as a crab that must make it's way to the sandcastle at the end of each level, all whilst avoiding predators, barnacles and staying hydrated. This project was initially developed early in my software engineering journey and served as a practical exploration into object-oriented programming principles and game development, with my own custom pixel art, sound design, custom music.
 
 Recently, I revisited this project with a focus on web accessibility and deployment, demonstrating my commitment to maintaining and improving past projects.
 
-[Play Crab Crawler](https://kaisequeira.github.io/Crabcrawler-Deployment/)
-
-![Crab Crawler Gameplay](/placeholder.svg?height=200&width=400)
+![image](https://github.com/user-attachments/assets/426967f3-a591-4733-8ee1-aaed8a8b162d)
 
 ## ✨ Key Features
 
@@ -45,11 +43,8 @@ Through the development and recent revival of Crab Crawler, I achieved several k
 
 ## 🎮 How to Play
 
-1. Visit the [Crab Crawler game page](https://kaisequeira.github.io/Crabcrawler-Deployment/)
-2. Use arrow keys or WASD for movement (also supports controller)
-3. Space bar, up arrow, w, or south button on controller to jump
-4. Down arrow, s, or east button on controller to crouch
-5. Explore the level and overcome obstacles!
+1. Visit [Crab Crawler's Deployment](https://kaisequeira.github.io/Crabcrawler-Deployment/) to see controls
+2. [Play Crab Crawler](https://kaisequeira.github.io/Crabcrawler-Deployment/) here
 
 For the best experience, use a modern web browser with WebGL support.
 
