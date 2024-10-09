@@ -10309,7 +10309,6 @@ MonoBehaviour:
   speed: 1.35
   jumpingForce: 7.25
   fallMultiplier: 2.5
-  jumpCooldown: 0.4
 --- !u!114 &7219873138453615954
 MonoBehaviour:
   m_ObjectHideFlags: 0

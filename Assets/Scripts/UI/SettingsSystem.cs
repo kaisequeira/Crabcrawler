@@ -1,13 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 using UnityEngine.Audio;
-using UnityEngine.Rendering;
 using UnityEngine.UI;
 using TMPro;
 
+/// <summary>
+/// Handles the game settings, including fullscreen toggle, volume control, and entering/exiting the settings menu.
+/// </summary>
 public class SettingsSystem : MonoBehaviour
 {
     public static bool inSettings = false;
@@ -19,7 +18,6 @@ public class SettingsSystem : MonoBehaviour
     public GameObject SettingsMenu;
 
     [SerializeField] private bool mainMenu;
-
     [SerializeField] private GameObject selectButton;
     [SerializeField] private GameObject pauseButton;
     [SerializeField] private GameObject gameOverButton;
@@ -36,6 +34,9 @@ public class SettingsSystem : MonoBehaviour
     public AudioMixer audioMixer;
     public AudioMixer musicMixer;
 
+    /// <summary>
+    /// Initializes settings such as fullscreen, music state, and volume.
+    /// </summary>
     void Start() {
         initialiseSwitch = true;
         musicToggle.isOn = SaveSystem.LoadMusicMutedState();
@@ -46,6 +47,9 @@ public class SettingsSystem : MonoBehaviour
         SetVolume(volumeSlider.value);
     }
 
+    /// <summary>
+    /// Enters the settings menu and hides any backdrop depending on the current game state.
+    /// </summary>
     public void EnterSettings() {
         inSettings = true;
         EventSystem.current.SetSelectedGameObject(selectButton);
@@ -55,52 +59,60 @@ public class SettingsSystem : MonoBehaviour
         if (mainMenu) {
             return;
         } else if (pauseScript.paused) {
-            pauseBackdrop.SetActive(false);           
+            pauseBackdrop.SetActive(false);
         } else if (gameOvScript.GameOv) {
-            gameOverBackdrop.SetActive(false);             
+            gameOverBackdrop.SetActive(false);
         } else if (levelCompScript.LevelComp) {
-            levelOverBackdrop.SetActive(false);  
+            levelOverBackdrop.SetActive(false);
         }
     }
 
+    /// <summary>
+    /// Exits the settings menu and restores the previous backdrop visibility based on the game state.
+    /// </summary>
     public void ExitSettings() {
         inSettings = false;
         if (mainMenu) {
             SettingsMenu.SetActive(false);
-            EventSystem.current.SetSelectedGameObject(mainMenuButton); 
+            EventSystem.current.SetSelectedGameObject(mainMenuButton);
             return;
         } else if (pauseScript.paused) {
-            pauseBackdrop.SetActive(true); 
-            EventSystem.current.SetSelectedGameObject(pauseButton);             
+            pauseBackdrop.SetActive(true);
+            EventSystem.current.SetSelectedGameObject(pauseButton);
         } else if (gameOvScript.GameOv) {
             gameOverBackdrop.SetActive(true);
-            EventSystem.current.SetSelectedGameObject(gameOverButton);             
+            EventSystem.current.SetSelectedGameObject(gameOverButton);
         } else if (levelCompScript.LevelComp) {
-            levelOverBackdrop.SetActive(true);  
-            EventSystem.current.SetSelectedGameObject(levelOverButton); 
+            levelOverBackdrop.SetActive(true);
+            EventSystem.current.SetSelectedGameObject(levelOverButton);
         }
         SettingsMenu.SetActive(false);
     }
 
-    public void SetVolume(float volume)
-    {
+    /// <summary>
+    /// Sets the game volume using a logarithmic scale.
+    /// </summary>
+    public void SetVolume(float volume) {
         SaveSystem.SaveVolume((int)volume);
 
-        // Ensure the input volume is clamped between 0 and 100
-        volume = Mathf.Clamp(volume, 0.0001f, 100f); // Avoid using zero to prevent log(0) issues
+        // Ensure volume is clamped between 0.0001 and 100 to avoid log(0) issues
+        volume = Mathf.Clamp(volume, 0.0001f, 100f);
+        float logVolume = Mathf.Log10(volume / 100f) * 20f;
 
-        // Convert linear volume (0 to 100) to logarithmic scale (-80 to 0 dB)
-        float logVolume = Mathf.Log10(volume / 100f) * 20f;  // Scales it to the range -80 to 0
-
-        // Apply the volume to the audio mixer
         audioMixer.SetFloat("volume", logVolume);
         musicMixer.SetFloat("musicVolume", logVolume);
     }
 
+    /// <summary>
+    /// Toggles fullscreen mode.
+    /// </summary>
     public void SetFullscreen(bool isFullscreen) {
         Screen.fullScreen = isFullscreen;
     }
 
+    /// <summary>
+    /// Toggles music state and resumes or pauses it as needed.
+    /// </summary>
     public void MusicEnabled() {
         if (!initialiseSwitch) {
             if (mainMenu || !FindFirstObjectByType<PauseMenu>().paused) {
@@ -117,21 +129,23 @@ public class SettingsSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Pauses all game audio except for the menu navigation sounds.
+    /// </summary>
     public static void PauseGameAudio() {
         AudioManager audioManager = FindFirstObjectByType<AudioManager>();
         foreach (Sound audioSource in audioManager.sounds) {
-            if (audioSource.source != null) {
-                audioSource.source.Pause();
-            }
+            audioSource.source?.Pause();
         }
     }
 
+    /// <summary>
+    /// Resumes all paused game audio.
+    /// </summary>
     public static void ResumeGameAudio() {
         AudioManager audioManager = FindFirstObjectByType<AudioManager>();
         foreach (Sound audioSource in audioManager.sounds) {
-            if (audioSource.source != null) {
-                audioSource.source.UnPause();
-            }
+            audioSource.source?.UnPause();
         }
     }
 }

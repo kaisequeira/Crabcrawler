@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Handles the level win condition and triggers the end screen.
+/// </summary>
 public class WinConditionScript : MonoBehaviour
 {
-
     [SerializeField] private Collider2D playerCollider;
     private Collider2D winCollider;
     private Animator animator;
@@ -18,6 +20,9 @@ public class WinConditionScript : MonoBehaviour
         winCollider = GetComponent<Collider2D>();
     }
 
+    /// <summary>
+    /// Checks if the player has collided with the win trigger and ends the level.
+    /// </summary>
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Player") {
             Destroy(PlayerSprite, 0.4f);
@@ -32,6 +37,9 @@ public class WinConditionScript : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Displays the level complete splash screen after a short delay.
+    /// </summary>
     void LevelWinSplashScreen() {
         LevelCompleteScript.LevelFinish();
     }

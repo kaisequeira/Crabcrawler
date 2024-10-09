@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Manages the player's health, handles death, respawn, and updates the health UI.
+/// </summary>
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private int playerLives;
@@ -16,17 +19,21 @@ public class PlayerHealth : MonoBehaviour
     public Sprite[] healthSprite;
     public SpriteRenderer healthRenderer;
 
+    /// <summary>
+    /// Initializes the player's health by updating the health UI based on the number of lives.
+    /// </summary>
     private void Start() {
         healthRenderer.sprite = healthSprite[playerLives];
     }
 
+    /// <summary>
+    /// Reduces player health and handles the death process, including animations and disabling movement.
+    /// </summary>
     public void removeHealth() {
-        // deathAnimation
         isDead = true;
         animator.SetBool("Dead", isDead);
         AudioManager.instance.Play("HeartLoss");
-        
-        // disable rigidbody
+
         RB2D.isKinematic = true;
         RB2D.constraints = RigidbodyConstraints2D.FreezeAll;
 
@@ -35,33 +42,37 @@ public class PlayerHealth : MonoBehaviour
             healthRenderer.sprite = healthSprite[playerLives];
         }
 
-        // Wait for animation
         Invoke("ReturnPlayerToGame", 1.05f);
     }
 
+    /// <summary>
+    /// Respawns the player at the last checkpoint if lives remain, or triggers a game over.
+    /// </summary>
     private void ReturnPlayerToGame() {
         if (playerLives <= 0) {
             GameOverScript.GameComplete();
         } else {
-            // return player to checkpoint
             RB2D.transform.position = currentCheckSpawnpoint;
-            
             oxygenScript.Add();
             Invoke("ReturnPlayerMovement", 0.4f);
 
-            // disable animation
             isDead = false;
             animator.SetBool("Dead", isDead);
         }        
     }
 
+    /// <summary>
+    /// Re-enables player movement and restores Rigidbody constraints.
+    /// </summary>
     private void ReturnPlayerMovement() {
-        // enable rigidbody
         RB2D.isKinematic = false;
         RB2D.constraints = RigidbodyConstraints2D.None;
         RB2D.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
+    /// <summary>
+    /// Adds an extra life when the player reaches a checkpoint, up to a maximum of 3 lives.
+    /// </summary>
     public void CheckpointAddHeart() {
         if (playerLives < 3 && playerLives > 0) {
             playerLives += 1;

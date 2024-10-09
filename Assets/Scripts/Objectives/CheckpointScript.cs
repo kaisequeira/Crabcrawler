@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Handles the activation and respawn point of a checkpoint when the player reaches it.
+/// </summary>
 public class CheckpointScript : MonoBehaviour
 {
     private Collider2D checkpointLocation;
@@ -14,6 +17,9 @@ public class CheckpointScript : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    /// <summary>
+    /// Triggers checkpoint activation and updates player respawn point.
+    /// </summary>
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Player") {
             animator.SetBool("Activated", true);
