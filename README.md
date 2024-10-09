@@ -43,7 +43,7 @@ Through the development and recent revival of Crab Crawler, I achieved several k
 
 ## 🎮 How to Play
 
-1. Visit [Crab Crawler's Deployment](https://kaisequeira.github.io/Crabcrawler-Deployment/) to see controls
+1. Visit [Crab Crawler's Deployment Repository](https://github.com/kaisequeira/Crabcrawler-Deployment) to see how to play.
 2. [Play Crab Crawler](https://kaisequeira.github.io/Crabcrawler-Deployment/) here
 
 For the best experience, use a modern web browser with WebGL support.
