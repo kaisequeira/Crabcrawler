@@ -1924,6 +1924,10 @@ PrefabInstance:
       propertyPath: playerScript
       value: 
       objectReference: {fileID: 851109102}
+    - target: {fileID: 7698383759286002639, guid: 7c73793bcf1c0134eaf2c0c67e5fc2a9, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 851109103}
     - target: {fileID: 7698383760210599952, guid: 7c73793bcf1c0134eaf2c0c67e5fc2a9, type: 3}
       propertyPath: radiusIncrease
       value: 3
@@ -40938,7 +40942,7 @@ Tilemap:
       - {fileID: 21300000, guid: 52614c22e3032fc40aa692e13eb5dcc9, type: 3}
       - {fileID: 21300000, guid: 00e9f61134436744c80f7643080ac2a3, type: 3}
       - {fileID: 21300000, guid: 6e8852a1f81d6554fa282f3d6fbe32d4, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 20, y: -1, z: 0}

@@ -13,4 +13,8 @@ public class GameData
     public GameData () {
         level = LevelTransition.currentLevel;
     }
+
+    public GameData (int level) {
+        this.level = level;
+    }
 }

@@ -8,6 +8,7 @@ using UnityEngine;
 public class InKillRangeSeagull : MonoBehaviour
 {
     public PlayerHealth playerScript; // Reference to the player's health script.
+    public PlayerController playerController; // Reference to the player's controller script.
 
     /// <summary>
     /// Reduces the player's health when they enter the seagull's kill range, if they are not dead.
@@ -15,7 +16,7 @@ public class InKillRangeSeagull : MonoBehaviour
     /// <param name="collision">The collider of the object entering the trigger.</param>
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Player") {
-            if (!playerScript.isDead) {
+            if (!playerScript.isDead && !playerController.inWater) {
                 playerScript.removeHealth(); // Applies damage to the player.
             }    
         }

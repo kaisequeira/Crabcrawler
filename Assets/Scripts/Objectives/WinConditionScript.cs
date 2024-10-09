@@ -28,6 +28,7 @@ public class WinConditionScript : MonoBehaviour
             Destroy(PlayerSprite, 0.4f);
             playerCollider.enabled = false;
             levelWon = true;
+            SaveSystem.SaveLevelComplete();
             RB2D.transform.position = winCollider.transform.position + new Vector3(0f, -0.315f, 0f);
             RB2D.isKinematic = true;
             RB2D.constraints = RigidbodyConstraints2D.FreezeAll;

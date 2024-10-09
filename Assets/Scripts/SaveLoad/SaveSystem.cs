@@ -20,6 +20,16 @@ public static class SaveSystem
     }
 
     /// <summary>
+    /// Saves the current level progress after completion.
+    /// </summary>
+    public static void SaveLevelComplete() {
+        GameData data = new GameData(LevelTransition.currentLevel + 1);
+        string jsonData = JsonUtility.ToJson(data);
+        PlayerPrefs.SetString("PlayerData", jsonData);
+        PlayerPrefs.Save();
+    }
+
+    /// <summary>
     /// Loads saved player data from PlayerPrefs.
     /// </summary>
     public static GameData LoadPlayer() {
