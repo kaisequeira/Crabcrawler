@@ -10321,7 +10321,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f0a1edb2ef889b44996558ed553864b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerLives: 3
   currentCheckSpawnpoint: {x: 0, y: 0}
   RB2D: {fileID: 7219873138453615952}
   animator: {fileID: 7219873138453615944}

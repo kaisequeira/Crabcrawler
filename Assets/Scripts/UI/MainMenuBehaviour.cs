@@ -11,7 +11,7 @@ public class MainMenuBehaviour : MonoBehaviour
     public GameObject newGameButton;
 
     /// <summary>
-    /// Initializes the main menu. Hides the resume button if no saved data is present and disables the exit button on WebGL.
+    /// Initializes the main menu. Hides the resume button if no saved data is present.
     /// </summary>
     void Start()
     {
@@ -19,5 +19,8 @@ public class MainMenuBehaviour : MonoBehaviour
             resumeButton.SetActive(false);
             eventSystem.SetSelectedGameObject(newGameButton);
         }
+
+        GameObject indicator = resumeButton.transform.GetChild(0).gameObject;
+        indicator.SetActive(SaveSystem.LoadHardMode());
     }
 }

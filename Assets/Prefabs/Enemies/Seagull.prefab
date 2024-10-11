@@ -630,3 +630,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerScript: {fileID: 0}
+  playerController: {fileID: 0}
