@@ -10,6 +10,7 @@ using TMPro;
 public class SettingsSystem : MonoBehaviour
 {
     public static bool inSettings = false;
+    public static bool AudioPaused = false;
     private bool initialiseSwitch;
     public bool pauseReset;
     [SerializeField] private PauseMenu pauseScript;
@@ -27,6 +28,7 @@ public class SettingsSystem : MonoBehaviour
     [SerializeField] private GameObject pauseBackdrop;
     [SerializeField] private GameObject gameOverBackdrop;
     [SerializeField] private GameObject levelOverBackdrop;
+    [SerializeField] private GameObject enemies;
 
     public Toggle fullscreenToggle;
     public Toggle musicToggle;
@@ -133,6 +135,7 @@ public class SettingsSystem : MonoBehaviour
     /// Pauses all game audio except for the menu navigation sounds.
     /// </summary>
     public static void PauseGameAudio() {
+        AudioPaused = true;
         AudioManager audioManager = FindFirstObjectByType<AudioManager>();
         foreach (Sound audioSource in audioManager.sounds) {
             audioSource.source?.Pause();
@@ -143,6 +146,7 @@ public class SettingsSystem : MonoBehaviour
     /// Resumes all paused game audio.
     /// </summary>
     public static void ResumeGameAudio() {
+        AudioPaused = false;
         AudioManager audioManager = FindFirstObjectByType<AudioManager>();
         foreach (Sound audioSource in audioManager.sounds) {
             audioSource.source?.UnPause();

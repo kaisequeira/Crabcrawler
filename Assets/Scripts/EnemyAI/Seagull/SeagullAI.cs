@@ -75,6 +75,12 @@ public class SeagullAI : MonoBehaviour
     }
 
     void Update() {
+        if (SettingsSystem.AudioPaused) {
+            GetComponent<AudioSource>().mute = true; // Mute audio when settings are paused.
+        } else {
+            GetComponent<AudioSource>().mute = false; // Unmute audio when settings are not paused.
+        }
+
         animator.SetBool("inRange", currentState == SeagullState.TrackingPlayer); // Update animator state.
         if (currentState == SeagullState.TrackingPlayer && !GetComponent<AudioSource>().isPlaying) {
             GetComponent<AudioSource>().Play(); // Play sound when tracking the player.

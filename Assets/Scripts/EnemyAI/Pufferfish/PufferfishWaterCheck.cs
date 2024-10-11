@@ -30,4 +30,15 @@ public class PufferfishWaterCheck : MonoBehaviour
             GetComponent<AudioSource>().Play(); // Plays a sound when leaving water.
         }
     }
+
+    /// <summary>
+    /// Updates the pufferfish's audio based on settings.
+    /// </summary>
+    void Update() {
+        if (SettingsSystem.AudioPaused) {
+            GetComponent<AudioSource>().mute = true;
+        } else {
+            GetComponent<AudioSource>().mute = false;
+        }
+    }
 }

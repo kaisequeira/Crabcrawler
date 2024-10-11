@@ -19,6 +19,17 @@ public class TurtleMovement : MonoBehaviour
     }
 
     /// <summary>
+    /// Updates the turtle's audio based on settings.
+    /// </summary>
+    void Update() {
+        if (SettingsSystem.AudioPaused) {
+            GetComponent<AudioSource>().mute = true;
+        } else {
+            GetComponent<AudioSource>().mute = false;
+        }
+    }
+
+    /// <summary>
     /// Moves the turtle based on its aggression state.
     /// </summary>
     void FixedUpdate() {
