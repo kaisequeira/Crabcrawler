@@ -26,7 +26,9 @@ public class CheckpointScript : MonoBehaviour
             if (!checkpointActivation) {
                 checkpointActivation = true;
                 playerRespawnScript.currentCheckSpawnpoint = checkpointLocation.transform.position;
-                playerRespawnScript.CheckpointAddHeart();
+                if (!SaveSystem.LoadHardMode()) {
+                    playerRespawnScript.CheckpointAddHeart();
+                }
                 AudioManager.instance.Play("Checkpoint");
             }
         }

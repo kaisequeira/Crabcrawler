@@ -45,6 +45,16 @@ public class LevelTransition : MonoBehaviour
     /// Starts a new game from the first level.
     /// </summary>
     public void NewGame() {
+        SaveSystem.SaveHardMode(false);
+        StartCoroutine(LoadLevel(1));
+    }
+
+    /// <summary>
+    /// Starts a new hard mode game from the first level.
+    /// </summary>
+    public void HardGame() {
+        SaveSystem.SaveHardMode(true);
+        SaveSystem.SaveLives(3);
         StartCoroutine(LoadLevel(1));
     }
 

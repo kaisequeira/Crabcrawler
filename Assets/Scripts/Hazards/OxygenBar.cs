@@ -9,8 +9,8 @@ using UnityEngine.UI;
 public class OxygenBar : MonoBehaviour
 {
     [SerializeField] private float maxOxygen;
-    [SerializeField] private float oxygenRate;
     [SerializeField] private WinConditionScript winSet;
+    private float oxygenRate;
     private float currentOxygen;
     public Image oxygenBar;
 
@@ -20,8 +20,9 @@ public class OxygenBar : MonoBehaviour
     public Animator warningAnimator;
 
     void Start() {
-       currentOxygen = maxOxygen;
-       oxygenBar.fillAmount = 1;
+        oxygenRate = SaveSystem.LoadHardMode() ? 1.5f : 1.0f;
+        currentOxygen = maxOxygen;
+        oxygenBar.fillAmount = 1;
     }
 
     /// <summary>
@@ -40,7 +41,7 @@ public class OxygenBar : MonoBehaviour
                 Add();
             }
 
-            warningAnimator.SetBool("Warning", currentOxygen / maxOxygen < 0.2f && currentOxygen > 0);
+            warningAnimator.SetBool("Warning", currentOxygen / maxOxygen < 0.35f && currentOxygen > 0);
         } else {
             warningAnimator.SetBool("Warning", false);
         }

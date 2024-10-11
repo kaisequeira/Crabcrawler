@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private int playerLives;
+    private int playerLives;
     [SerializeField] public Vector2 currentCheckSpawnpoint;
     public Rigidbody2D RB2D;
     public Animator animator;
@@ -23,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
     /// Initializes the player's health by updating the health UI based on the number of lives.
     /// </summary>
     private void Start() {
+        playerLives = SaveSystem.LoadLives();
         healthRenderer.sprite = healthSprite[playerLives];
     }
 
@@ -38,6 +39,8 @@ public class PlayerHealth : MonoBehaviour
         RB2D.constraints = RigidbodyConstraints2D.FreezeAll;
 
         playerLives -= 1;
+        SaveSystem.SaveLives(playerLives);
+
         if (playerLives >= 0) {
             healthRenderer.sprite = healthSprite[playerLives];
         }
@@ -76,6 +79,7 @@ public class PlayerHealth : MonoBehaviour
     public void CheckpointAddHeart() {
         if (playerLives < 3 && playerLives > 0) {
             playerLives += 1;
+            SaveSystem.SaveLives(playerLives);
             healthRenderer.sprite = healthSprite[playerLives];
         }        
     }

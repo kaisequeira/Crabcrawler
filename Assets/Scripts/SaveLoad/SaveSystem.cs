@@ -90,4 +90,43 @@ public static class SaveSystem
         }
         return false;
     }
+
+    /// <summary>
+    /// Sets the gamemode to hard mode.
+    /// </summary>
+    public static void SaveHardMode(bool isHardMode) {
+        PlayerPrefs.SetInt("HardMode", isHardMode ? 1 : 0);
+        PlayerPrefs.Save();
+    }
+
+    /// <summary>
+    /// Loads the hard mode state.
+    /// </summary>
+    public static bool LoadHardMode() {
+        if (PlayerPrefs.HasKey("HardMode")) {
+            return PlayerPrefs.GetInt("HardMode") == 1;
+        }
+        return false;
+    }
+
+    /// <summary>
+    /// Saves the player lives count.
+    /// </summary>
+    public static void SaveLives(int lives) {
+        if (LoadHardMode()) {
+            PlayerPrefs.SetInt("Lives", lives);
+            PlayerPrefs.Save();
+        }
+    }
+
+    /// <summary>
+    /// Loads the player lives count.
+    /// </summary>
+    public static int LoadLives() {
+        if (LoadHardMode() && PlayerPrefs.HasKey("Lives")) {
+            return PlayerPrefs.GetInt("Lives");
+        } else {
+            return 3;
+        }
+    }
 }

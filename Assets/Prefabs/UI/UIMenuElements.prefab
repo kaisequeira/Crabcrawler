@@ -2856,7 +2856,9 @@ MonoBehaviour:
   playerControls: {fileID: 0}
   GameOv: 0
   GameOverMenu: {fileID: 5423722884966347876}
-  selectButton: {fileID: 5423722883961451768}
+  retryButton: {fileID: 5423722883961451768}
+  settingsButton: {fileID: 5423722883726110457}
+  mainMenuButton: {fileID: 5423722884098233090}
 --- !u!1 &5423722884966347876
 GameObject:
   m_ObjectHideFlags: 0
