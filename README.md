@@ -63,9 +63,9 @@ Crab Crawler was originally developed in Unity version 2022.1.17f1. To leverage 
 
 The recent project revival focused on web deployment and accessibility improvements, showcasing my ability to return to past projects, implement new features, and adapt them for different platforms.
 
-## 📝 License
+## 📄 License
 
-This project is available under the [MIT License](LICENSE).
+This project contains no licensing and, thus, is protected under the default copyright laws.
 
 ## 🤝 Contact
 
